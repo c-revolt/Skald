@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D046901E29530172002A536D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901D29530172002A536D /* AppDelegate.swift */; };
+		D046902029530172002A536D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901F29530172002A536D /* SceneDelegate.swift */; };
+		D046902229530172002A536D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* ViewController.swift */; };
+		D046902729530177002A536D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D046902629530177002A536D /* Assets.xcassets */; };
+		D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D046902829530177002A536D /* LaunchScreen.storyboard */; };
+		D046903529530177002A536D /* SkaldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903429530177002A536D /* SkaldTests.swift */; };
+		D046903F29530178002A536D /* SkaldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903E29530178002A536D /* SkaldUITests.swift */; };
+		D046904129530178002A536D /* SkaldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D046903129530177002A536D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D046901229530172002A536D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D046901929530172002A536D;
+			remoteInfo = Skald;
+		};
+		D046903B29530178002A536D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D046901229530172002A536D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D046901929530172002A536D;
+			remoteInfo = Skald;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D046902129530172002A536D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D046902629530177002A536D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D046902929530177002A536D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D046902B29530177002A536D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D046903029530177002A536D /* SkaldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D046903429530177002A536D /* SkaldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldTests.swift; sourceTree = "<group>"; };
+		D046903A29530178002A536D /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D046903E29530178002A536D /* SkaldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITests.swift; sourceTree = "<group>"; };
+		D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D046901729530172002A536D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046902D29530177002A536D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046903729530178002A536D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D046901129530172002A536D = {
+			isa = PBXGroup;
+			children = (
+				D046901C29530172002A536D /* Skald */,
+				D046903329530177002A536D /* SkaldTests */,
+				D046903D29530178002A536D /* SkaldUITests */,
+				D046901B29530172002A536D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D046901B29530172002A536D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D046901A29530172002A536D /* Skald.app */,
+				D046903029530177002A536D /* SkaldTests.xctest */,
+				D046903A29530178002A536D /* SkaldUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D046901C29530172002A536D /* Skald */ = {
+			isa = PBXGroup;
+			children = (
+				D046901D29530172002A536D /* AppDelegate.swift */,
+				D046901F29530172002A536D /* SceneDelegate.swift */,
+				D046902129530172002A536D /* ViewController.swift */,
+				D046902629530177002A536D /* Assets.xcassets */,
+				D046902829530177002A536D /* LaunchScreen.storyboard */,
+				D046902B29530177002A536D /* Info.plist */,
+			);
+			path = Skald;
+			sourceTree = "<group>";
+		};
+		D046903329530177002A536D /* SkaldTests */ = {
+			isa = PBXGroup;
+			children = (
+				D046903429530177002A536D /* SkaldTests.swift */,
+			);
+			path = SkaldTests;
+			sourceTree = "<group>";
+		};
+		D046903D29530178002A536D /* SkaldUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D046903E29530178002A536D /* SkaldUITests.swift */,
+				D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */,
+			);
+			path = SkaldUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D046901929530172002A536D /* Skald */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D046904429530178002A536D /* Build configuration list for PBXNativeTarget "Skald" */;
+			buildPhases = (
+				D046901629530172002A536D /* Sources */,
+				D046901729530172002A536D /* Frameworks */,
+				D046901829530172002A536D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Skald;
+			productName = Skald;
+			productReference = D046901A29530172002A536D /* Skald.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D046902F29530177002A536D /* SkaldTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D046904729530178002A536D /* Build configuration list for PBXNativeTarget "SkaldTests" */;
+			buildPhases = (
+				D046902C29530177002A536D /* Sources */,
+				D046902D29530177002A536D /* Frameworks */,
+				D046902E29530177002A536D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D046903229530177002A536D /* PBXTargetDependency */,
+			);
+			name = SkaldTests;
+			productName = SkaldTests;
+			productReference = D046903029530177002A536D /* SkaldTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D046903929530178002A536D /* SkaldUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D046904A29530178002A536D /* Build configuration list for PBXNativeTarget "SkaldUITests" */;
+			buildPhases = (
+				D046903629530178002A536D /* Sources */,
+				D046903729530178002A536D /* Frameworks */,
+				D046903829530178002A536D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D046903C29530178002A536D /* PBXTargetDependency */,
+			);
+			name = SkaldUITests;
+			productName = SkaldUITests;
+			productReference = D046903A29530178002A536D /* SkaldUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D046901229530172002A536D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D046901929530172002A536D = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					D046902F29530177002A536D = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D046901929530172002A536D;
+					};
+					D046903929530178002A536D = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = D046901929530172002A536D;
+					};
+				};
+			};
+			buildConfigurationList = D046901529530172002A536D /* Build configuration list for PBXProject "Skald" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D046901129530172002A536D;
+			productRefGroup = D046901B29530172002A536D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D046901929530172002A536D /* Skald */,
+				D046902F29530177002A536D /* SkaldTests */,
+				D046903929530178002A536D /* SkaldUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D046901829530172002A536D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */,
+				D046902729530177002A536D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046902E29530177002A536D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046903829530178002A536D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D046901629530172002A536D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D046902229530172002A536D /* ViewController.swift in Sources */,
+				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
+				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046902C29530177002A536D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D046903529530177002A536D /* SkaldTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D046903629530178002A536D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D046904129530178002A536D /* SkaldUITestsLaunchTests.swift in Sources */,
+				D046903F29530178002A536D /* SkaldUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D046903229530177002A536D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D046901929530172002A536D /* Skald */;
+			targetProxy = D046903129530177002A536D /* PBXContainerItemProxy */;
+		};
+		D046903C29530178002A536D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D046901929530172002A536D /* Skald */;
+			targetProxy = D046903B29530178002A536D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D046902829530177002A536D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D046902929530177002A536D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D046904229530178002A536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D046904329530178002A536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D046904529530178002A536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Skald/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.Skald;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D046904629530178002A536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Skald/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.Skald;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D046904829530178002A536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skald";
+			};
+			name = Debug;
+		};
+		D046904929530178002A536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skald";
+			};
+			name = Release;
+		};
+		D046904B29530178002A536D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skald;
+			};
+			name = Debug;
+		};
+		D046904C29530178002A536D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2S52Q5VDX5;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Skald;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D046901529530172002A536D /* Build configuration list for PBXProject "Skald" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D046904229530178002A536D /* Debug */,
+				D046904329530178002A536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D046904429530178002A536D /* Build configuration list for PBXNativeTarget "Skald" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D046904529530178002A536D /* Debug */,
+				D046904629530178002A536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D046904729530178002A536D /* Build configuration list for PBXNativeTarget "SkaldTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D046904829530178002A536D /* Debug */,
+				D046904929530178002A536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D046904A29530178002A536D /* Build configuration list for PBXNativeTarget "SkaldUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D046904B29530178002A536D /* Debug */,
+				D046904C29530178002A536D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D046901229530172002A536D /* Project object */;
+}
