@@ -6,3 +6,20 @@
 //
 
 import Foundation
+
+// MARK: StoriesViewModelProtocol
+protocol StoriesViewModelProtocol: AnyObject {
+    
+}
+
+// MARK: StoriesViewModel
+class StoriesViewModel {
+    
+    private weak var view: StoriesViewModelProtocol?
+    
+}
+
+// MARK: StoriesViewModelProtocol
+extension StoriesViewModel: StoriesViewModelProtocol {
+    
+}
