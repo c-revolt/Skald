@@ -19,6 +19,8 @@
 		D0469050295304B1002A536D /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904F295304B1002A536D /* Stories.swift */; };
 		D04690542953070A002A536D /* StoriesIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04690532953070A002A536D /* StoriesIO.swift */; };
 		D046905629530718002A536D /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905529530718002A536D /* StoriesViewModel.swift */; };
+		D0469058295314A5002A536D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0469057295314A5002A536D /* Coordinator.swift */; };
+		D046905A29531500002A536D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905929531500002A536D /* Assembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		D046904F295304B1002A536D /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
 		D04690532953070A002A536D /* StoriesIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesIO.swift; sourceTree = "<group>"; };
 		D046905529530718002A536D /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
+		D0469057295314A5002A536D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		D046905929531500002A536D /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		D046905129530542002A536D /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				D046905929531500002A536D /* Assembly.swift */,
+				D0469057295314A5002A536D /* Coordinator.swift */,
 				D046905229530554002A536D /* StoriesModule */,
 			);
 			path = Modules;
@@ -284,11 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D046905629530718002A536D /* StoriesViewModel.swift in Sources */,
+				D046905A29531500002A536D /* Assembly.swift in Sources */,
 				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
 				D0469050295304B1002A536D /* Stories.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
+				D0469058295314A5002A536D /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,7 +11,7 @@ protocol StoriesInput: AnyObject {
     
 }
 
-protocol StroiesOutput: AnyObject {
+protocol StoriesOutput: AnyObject {
     
 }
 

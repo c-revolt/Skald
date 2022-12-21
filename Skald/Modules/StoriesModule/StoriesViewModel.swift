@@ -13,9 +13,14 @@ protocol StoriesViewModelProtocol: AnyObject {
 }
 
 // MARK: StoriesViewModel
-class StoriesViewModel {
+final class StoriesViewModel {
     
-    private weak var view: StoriesViewModelProtocol?
+    weak var view: StoriesViewControllerProtocol?
+    private weak var output: StoriesOutput?
+    
+    init(output: StoriesOutput) {
+        self.output = output
+    }
     
 }
 

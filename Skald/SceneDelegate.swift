@@ -10,17 +10,16 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    private let assembly = Assembly()
+    private lazy var coordinator = Coordinator(assembly: assembly)
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
-        window = UIWindow(frame: windowScene.coordinateSpace.bounds)
-        window?.windowScene = windowScene
-        let viewController = StoriesViewController()
-        window?.rootViewController = viewController
-        window?.makeKeyAndVisible()
+        let window = UIWindow(windowScene: windowScene)
+        coordinator.start(window: window)
+        self.window = window
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
