@@ -9,12 +9,16 @@
 /* Begin PBXBuildFile section */
 		D046901E29530172002A536D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901D29530172002A536D /* AppDelegate.swift */; };
 		D046902029530172002A536D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901F29530172002A536D /* SceneDelegate.swift */; };
-		D046902229530172002A536D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* ViewController.swift */; };
+		D046902229530172002A536D /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* StoriesViewController.swift */; };
 		D046902729530177002A536D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D046902629530177002A536D /* Assets.xcassets */; };
 		D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D046902829530177002A536D /* LaunchScreen.storyboard */; };
 		D046903529530177002A536D /* SkaldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903429530177002A536D /* SkaldTests.swift */; };
 		D046903F29530178002A536D /* SkaldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903E29530178002A536D /* SkaldUITests.swift */; };
 		D046904129530178002A536D /* SkaldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */; };
+		D046904E2953048F002A536D /* storiesData.json in Resources */ = {isa = PBXBuildFile; fileRef = D046904D2953048F002A536D /* storiesData.json */; };
+		D0469050295304B1002A536D /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904F295304B1002A536D /* Stories.swift */; };
+		D04690542953070A002A536D /* StoriesIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04690532953070A002A536D /* StoriesIO.swift */; };
+		D046905629530718002A536D /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905529530718002A536D /* StoriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D046902129530172002A536D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D046902129530172002A536D /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
 		D046902629530177002A536D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D046902929530177002A536D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D046902B29530177002A536D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,10 @@
 		D046903A29530178002A536D /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046903E29530178002A536D /* SkaldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITests.swift; sourceTree = "<group>"; };
 		D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D046904D2953048F002A536D /* storiesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = storiesData.json; sourceTree = "<group>"; };
+		D046904F295304B1002A536D /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		D04690532953070A002A536D /* StoriesIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesIO.swift; sourceTree = "<group>"; };
+		D046905529530718002A536D /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +107,8 @@
 			children = (
 				D046901D29530172002A536D /* AppDelegate.swift */,
 				D046901F29530172002A536D /* SceneDelegate.swift */,
-				D046902129530172002A536D /* ViewController.swift */,
+				D046904D2953048F002A536D /* storiesData.json */,
+				D046905129530542002A536D /* Modules */,
 				D046902629530177002A536D /* Assets.xcassets */,
 				D046902829530177002A536D /* LaunchScreen.storyboard */,
 				D046902B29530177002A536D /* Info.plist */,
@@ -122,6 +131,25 @@
 				D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */,
 			);
 			path = SkaldUITests;
+			sourceTree = "<group>";
+		};
+		D046905129530542002A536D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D046905229530554002A536D /* StoriesModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D046905229530554002A536D /* StoriesModule */ = {
+			isa = PBXGroup;
+			children = (
+				D046904F295304B1002A536D /* Stories.swift */,
+				D04690532953070A002A536D /* StoriesIO.swift */,
+				D046905529530718002A536D /* StoriesViewModel.swift */,
+				D046902129530172002A536D /* StoriesViewController.swift */,
+			);
+			path = StoriesModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D046904E2953048F002A536D /* storiesData.json in Resources */,
 				D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */,
 				D046902729530177002A536D /* Assets.xcassets in Resources */,
 			);
@@ -254,7 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D046902229530172002A536D /* ViewController.swift in Sources */,
+				D046905629530718002A536D /* StoriesViewModel.swift in Sources */,
+				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
+				D0469050295304B1002A536D /* Stories.swift in Sources */,
+				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
 			);
