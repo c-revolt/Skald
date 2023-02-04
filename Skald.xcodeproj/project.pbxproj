@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009409298E5F98009E1857 /* StoriesDataProvider.swift */; };
+		D0009410298E7632009E1857 /* runesData.json in Resources */ = {isa = PBXBuildFile; fileRef = D000940F298E7632009E1857 /* runesData.json */; };
+		D0009412298E7A7A009E1857 /* dailyRuneMention.json in Resources */ = {isa = PBXBuildFile; fileRef = D0009411298E7A7A009E1857 /* dailyRuneMention.json */; };
+		D0009414298E8244009E1857 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009413298E8244009E1857 /* Rune.swift */; };
+		D0009416298E82EE009E1857 /* RunesIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009415298E82EE009E1857 /* RunesIO.swift */; };
+		D0009418298E8320009E1857 /* RunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009417298E8320009E1857 /* RunesViewModel.swift */; };
+		D000941A298E8406009E1857 /* RunesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009419298E8406009E1857 /* RunesDataProvider.swift */; };
+		D000941C298E8491009E1857 /* RunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941B298E8491009E1857 /* RunesViewController.swift */; };
+		D000941F298E86A8009E1857 /* RunesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941E298E86A8009E1857 /* RunesViewCell.swift */; };
 		D046901E29530172002A536D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901D29530172002A536D /* AppDelegate.swift */; };
 		D046902029530172002A536D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901F29530172002A536D /* SceneDelegate.swift */; };
 		D046902229530172002A536D /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* StoriesViewController.swift */; };
@@ -16,7 +25,7 @@
 		D046903F29530178002A536D /* SkaldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903E29530178002A536D /* SkaldUITests.swift */; };
 		D046904129530178002A536D /* SkaldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */; };
 		D046904E2953048F002A536D /* storiesData.json in Resources */ = {isa = PBXBuildFile; fileRef = D046904D2953048F002A536D /* storiesData.json */; };
-		D0469050295304B1002A536D /* Stories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904F295304B1002A536D /* Stories.swift */; };
+		D0469050295304B1002A536D /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904F295304B1002A536D /* Story.swift */; };
 		D04690542953070A002A536D /* StoriesIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04690532953070A002A536D /* StoriesIO.swift */; };
 		D046905629530718002A536D /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905529530718002A536D /* StoriesViewModel.swift */; };
 		D0469058295314A5002A536D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0469057295314A5002A536D /* Coordinator.swift */; };
@@ -45,6 +54,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0009409298E5F98009E1857 /* StoriesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDataProvider.swift; sourceTree = "<group>"; };
+		D000940F298E7632009E1857 /* runesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = runesData.json; sourceTree = "<group>"; };
+		D0009411298E7A7A009E1857 /* dailyRuneMention.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyRuneMention.json; sourceTree = "<group>"; };
+		D0009413298E8244009E1857 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
+		D0009415298E82EE009E1857 /* RunesIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesIO.swift; sourceTree = "<group>"; };
+		D0009417298E8320009E1857 /* RunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewModel.swift; sourceTree = "<group>"; };
+		D0009419298E8406009E1857 /* RunesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesDataProvider.swift; sourceTree = "<group>"; };
+		D000941B298E8491009E1857 /* RunesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewController.swift; sourceTree = "<group>"; };
+		D000941E298E86A8009E1857 /* RunesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewCell.swift; sourceTree = "<group>"; };
 		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +76,7 @@
 		D046903E29530178002A536D /* SkaldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITests.swift; sourceTree = "<group>"; };
 		D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D046904D2953048F002A536D /* storiesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = storiesData.json; sourceTree = "<group>"; };
-		D046904F295304B1002A536D /* Stories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stories.swift; sourceTree = "<group>"; };
+		D046904F295304B1002A536D /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		D04690532953070A002A536D /* StoriesIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesIO.swift; sourceTree = "<group>"; };
 		D046905529530718002A536D /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 		D0469057295314A5002A536D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -94,6 +112,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D000940B298E5FA3009E1857 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D046905B2955C1B2002A536D /* StoriesViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D000940E298E75BB009E1857 /* RunesModule */ = {
+			isa = PBXGroup;
+			children = (
+				D0009413298E8244009E1857 /* Rune.swift */,
+				D0009415298E82EE009E1857 /* RunesIO.swift */,
+				D0009417298E8320009E1857 /* RunesViewModel.swift */,
+				D0009419298E8406009E1857 /* RunesDataProvider.swift */,
+				D000941B298E8491009E1857 /* RunesViewController.swift */,
+				D000941D298E8699009E1857 /* Cells */,
+			);
+			path = RunesModule;
+			sourceTree = "<group>";
+		};
+		D000941D298E8699009E1857 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D000941E298E86A8009E1857 /* RunesViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D046901129530172002A536D = {
 			isa = PBXGroup;
 			children = (
@@ -119,8 +166,7 @@
 			children = (
 				D046901D29530172002A536D /* AppDelegate.swift */,
 				D046901F29530172002A536D /* SceneDelegate.swift */,
-				D046904D2953048F002A536D /* storiesData.json */,
-				D04690622955C4D7002A536D /* New Group */,
+				D04690622955C4D7002A536D /* JSONFiles */,
 				D04690612955C4C5002A536D /* Utils */,
 				D046905129530542002A536D /* Modules */,
 				D046902629530177002A536D /* Assets.xcassets */,
@@ -152,6 +198,7 @@
 			children = (
 				D046905929531500002A536D /* Assembly.swift */,
 				D0469057295314A5002A536D /* Coordinator.swift */,
+				D000940E298E75BB009E1857 /* RunesModule */,
 				D046905229530554002A536D /* StoriesModule */,
 			);
 			path = Modules;
@@ -160,11 +207,12 @@
 		D046905229530554002A536D /* StoriesModule */ = {
 			isa = PBXGroup;
 			children = (
-				D046904F295304B1002A536D /* Stories.swift */,
+				D046904F295304B1002A536D /* Story.swift */,
 				D04690532953070A002A536D /* StoriesIO.swift */,
 				D046905529530718002A536D /* StoriesViewModel.swift */,
+				D0009409298E5F98009E1857 /* StoriesDataProvider.swift */,
 				D046902129530172002A536D /* StoriesViewController.swift */,
-				D046905B2955C1B2002A536D /* StoriesViewCell.swift */,
+				D000940B298E5FA3009E1857 /* Cells */,
 			);
 			path = StoriesModule;
 			sourceTree = "<group>";
@@ -179,11 +227,14 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
-		D04690622955C4D7002A536D /* New Group */ = {
+		D04690622955C4D7002A536D /* JSONFiles */ = {
 			isa = PBXGroup;
 			children = (
+				D046904D2953048F002A536D /* storiesData.json */,
+				D000940F298E7632009E1857 /* runesData.json */,
+				D0009411298E7A7A009E1857 /* dailyRuneMention.json */,
 			);
-			path = "New Group";
+			path = JSONFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,8 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D046904E2953048F002A536D /* storiesData.json in Resources */,
+				D0009410298E7632009E1857 /* runesData.json in Resources */,
 				D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */,
 				D046902729530177002A536D /* Assets.xcassets in Resources */,
+				D0009412298E7A7A009E1857 /* dailyRuneMention.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,14 +372,21 @@
 			files = (
 				D046905629530718002A536D /* StoriesViewModel.swift in Sources */,
 				D046905A29531500002A536D /* Assembly.swift in Sources */,
+				D000941F298E86A8009E1857 /* RunesViewCell.swift in Sources */,
 				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
-				D0469050295304B1002A536D /* Stories.swift in Sources */,
+				D000941A298E8406009E1857 /* RunesDataProvider.swift in Sources */,
+				D0469050295304B1002A536D /* Story.swift in Sources */,
 				D046905C2955C1B2002A536D /* StoriesViewCell.swift in Sources */,
 				D046905E2955C24B002A536D /* Constants.swift in Sources */,
+				D0009416298E82EE009E1857 /* RunesIO.swift in Sources */,
+				D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */,
+				D0009418298E8320009E1857 /* RunesViewModel.swift in Sources */,
 				D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */,
 				D04690642955C504002A536D /* ResizableLayout.swift in Sources */,
+				D000941C298E8491009E1857 /* RunesViewController.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
+				D0009414298E8244009E1857 /* Rune.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
 				D0469058295314A5002A536D /* Coordinator.swift in Sources */,
 			);

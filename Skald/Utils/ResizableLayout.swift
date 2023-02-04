@@ -17,6 +17,7 @@ struct StoriesCellConstants {
 //    func collectionView(_ collectionView: UICollectionView, sizeOfPhotoAtIndexPath indexPath: IndexPath) -> CGSize
 //}
 
+
 class ResizableLayout: UICollectionViewLayout {
     
     //weak var delegate: StoriesResizableLayoutDelegate!

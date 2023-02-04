@@ -17,4 +17,12 @@ class Assembly {
         return view
     }
     
+    func makeRunes(output: RunesOutput) -> UIViewController {
+        let viewModel = RunesViewModel(output: output)
+        let view = RunesViewController(viewModel: viewModel)
+        viewModel.view = view
+        
+        return view
+    }
+    
 }

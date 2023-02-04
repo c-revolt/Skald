@@ -1,28 +1,27 @@
 //
-//  ViewController.swift
+//  RunesViewController.swift
 //  Skald
 //
-//  Created by Александр Прайд on 21.12.2022.
+//  Created by Александр Прайд on 04.02.2023.
 //
 
 import UIKit
 
-// MARK: StoriesViewControllerProtocol
-protocol StoriesViewControllerProtocol: AnyObject {
+// MARK: RunesViewControllerProtocol
+protocol RunesViewControllerProtocol: AnyObject {
     
 }
 
 // MARK: StoriesViewController
-class StoriesViewController: UIViewController {
+class RunesViewController: UIViewController {
 
-    private weak var viewModel: StoriesViewModelProtocol?
+    private weak var viewModel: RunesViewModelProtocol?
     private var collectionView: UICollectionView?
-    private var resizableLayout = ResizableLayout()
-    private var storiesDataProvider: StoriesDataProvider?
+    private var runesDataProvider: RunesDataProvider?
     
     
     
-    init(viewModel: StoriesViewModelProtocol) {
+    init(viewModel: RunesViewModelProtocol) {
         self.viewModel = viewModel
         
         super.init(nibName: nil, bundle: nil)
@@ -31,6 +30,7 @@ class StoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
+        title = K.TabBarTitles.runes
         setupCollectionView()
     }
     
@@ -40,19 +40,19 @@ class StoriesViewController: UIViewController {
     }
     
     private func setupCollectionView() {
-        storiesDataProvider = StoriesDataProvider()
-        
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: resizableLayout)
+        runesDataProvider = RunesDataProvider()
+        let layout = UICollectionViewFlowLayout()
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collectionView = collectionView else { return }
         
         view.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .systemBackground
-        collectionView.dataSource = storiesDataProvider
-        collectionView.delegate = storiesDataProvider
+        collectionView.dataSource = runesDataProvider
+        collectionView.delegate = runesDataProvider
         collectionView.decelerationRate = .fast
         
-        collectionView.register(StoriesViewCell.self, forCellWithReuseIdentifier: StoriesViewCell.reusedID)
+        collectionView.register(RunesViewCell.self, forCellWithReuseIdentifier: RunesViewCell.reusedID)
         
         NSLayoutConstraint.activate([
             collectionView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -70,6 +70,7 @@ class StoriesViewController: UIViewController {
 }
 
 // MARK: StoriesViewControllerProtocol
-extension StoriesViewController: StoriesViewControllerProtocol {
+extension RunesViewController: RunesViewControllerProtocol {
     
 }
+

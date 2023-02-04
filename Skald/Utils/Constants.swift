@@ -10,6 +10,7 @@ import Foundation
 struct K {
     
     static let storiesCellReusedID = "StoriesViewCell"
+    static let runesCellReusedID = "RunesViewCell"
     
     struct TabBarTitles {
         // contorller's titles

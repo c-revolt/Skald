@@ -27,7 +27,7 @@ class StoriesViewCell: UICollectionViewCell {
     }()
     
     // titleLabel
-    let titleLabel: UILabel = {
+    var titleLabel: UILabel = {
         let label = UILabel()
         label.font = .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
@@ -45,6 +45,11 @@ class StoriesViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func update(with model: Story) {
+        self.titleLabel.text = model.storyTitle
+        self.backgroundImageView.image = UIImage(named: model.storyImage ?? "")
     }
     
     private func viewHeirarchy() {

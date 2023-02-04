@@ -9,6 +9,11 @@ import Foundation
 
 // MARK: StoriesViewModelProtocol
 protocol StoriesViewModelProtocol: AnyObject {
+
+    var stories: [Story] { get }
+    init(view: StoriesViewControllerProtocol?, output: StoriesOutput?)
+    func story(at index: Int) -> Story
+    var storiesFromJSON: [Story] { get }
     
 }
 
@@ -17,8 +22,12 @@ final class StoriesViewModel {
     
     weak var view: StoriesViewControllerProtocol?
     private weak var output: StoriesOutput?
+    private(set)var stories: [Story] = []
+    let storiesFromJSON = Bundle.main.decode([Story].self, from: "storiesData.json")
     
-    init(output: StoriesOutput) {
+    
+    init(view: StoriesViewControllerProtocol? = nil, output: StoriesOutput? = nil) {
+        self.view = view
         self.output = output
     }
     
@@ -27,4 +36,7 @@ final class StoriesViewModel {
 // MARK: StoriesViewModelProtocol
 extension StoriesViewModel: StoriesViewModelProtocol {
     
+    func story(at index: Int) -> Story {
+        return stories[index]
+    }
 }

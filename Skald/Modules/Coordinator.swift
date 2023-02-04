@@ -21,7 +21,7 @@ class Coordinator {
         tabBarController.setViewControllers(
             [
                 UINavigationController(rootViewController: assembly.makeStories(output: self)),
-                UINavigationController(rootViewController: UIViewController()),
+                UINavigationController(rootViewController: assembly.makeRunes(output: self)),
                 UINavigationController(rootViewController: UIViewController()),
                 UINavigationController(rootViewController: UIViewController()),
                 
@@ -30,9 +30,6 @@ class Coordinator {
         )
         
         setupTabBarController()
-        
-        
-        
         
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
@@ -64,4 +61,8 @@ class Coordinator {
 // MARK: StoriesOutput
 extension Coordinator: StoriesOutput {
 
+}
+
+extension Coordinator: RunesOutput {
+    
 }
