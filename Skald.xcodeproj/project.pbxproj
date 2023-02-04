@@ -21,6 +21,10 @@
 		D046905629530718002A536D /* StoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905529530718002A536D /* StoriesViewModel.swift */; };
 		D0469058295314A5002A536D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0469057295314A5002A536D /* Coordinator.swift */; };
 		D046905A29531500002A536D /* Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905929531500002A536D /* Assembly.swift */; };
+		D046905C2955C1B2002A536D /* StoriesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905B2955C1B2002A536D /* StoriesViewCell.swift */; };
+		D046905E2955C24B002A536D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905D2955C24B002A536D /* Constants.swift */; };
+		D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905F2955C368002A536D /* Bundle-Decodable.swift */; };
+		D04690642955C504002A536D /* ResizableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04690632955C504002A536D /* ResizableLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,10 @@
 		D046905529530718002A536D /* StoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewModel.swift; sourceTree = "<group>"; };
 		D0469057295314A5002A536D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		D046905929531500002A536D /* Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assembly.swift; sourceTree = "<group>"; };
+		D046905B2955C1B2002A536D /* StoriesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCell.swift; sourceTree = "<group>"; };
+		D046905D2955C24B002A536D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D046905F2955C368002A536D /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		D04690632955C504002A536D /* ResizableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,8 @@
 				D046901D29530172002A536D /* AppDelegate.swift */,
 				D046901F29530172002A536D /* SceneDelegate.swift */,
 				D046904D2953048F002A536D /* storiesData.json */,
+				D04690622955C4D7002A536D /* New Group */,
+				D04690612955C4C5002A536D /* Utils */,
 				D046905129530542002A536D /* Modules */,
 				D046902629530177002A536D /* Assets.xcassets */,
 				D046902829530177002A536D /* LaunchScreen.storyboard */,
@@ -154,8 +164,26 @@
 				D04690532953070A002A536D /* StoriesIO.swift */,
 				D046905529530718002A536D /* StoriesViewModel.swift */,
 				D046902129530172002A536D /* StoriesViewController.swift */,
+				D046905B2955C1B2002A536D /* StoriesViewCell.swift */,
 			);
 			path = StoriesModule;
+			sourceTree = "<group>";
+		};
+		D04690612955C4C5002A536D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D046905D2955C24B002A536D /* Constants.swift */,
+				D046905F2955C368002A536D /* Bundle-Decodable.swift */,
+				D04690632955C504002A536D /* ResizableLayout.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D04690622955C4D7002A536D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +321,10 @@
 				D046905A29531500002A536D /* Assembly.swift in Sources */,
 				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
 				D0469050295304B1002A536D /* Stories.swift in Sources */,
+				D046905C2955C1B2002A536D /* StoriesViewCell.swift in Sources */,
+				D046905E2955C24B002A536D /* Constants.swift in Sources */,
+				D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */,
+				D04690642955C504002A536D /* ResizableLayout.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,

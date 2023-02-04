@@ -11,7 +11,9 @@ struct Stories: Decodable {
     
     var storyTitle: String?
     var storyImage: String?
-    var storyContent: String?
     var storyAudio: String?
+    var storyRune: String?
+    var storyContent: String?
+    
     
 }
