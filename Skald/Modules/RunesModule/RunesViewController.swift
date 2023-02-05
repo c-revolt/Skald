@@ -15,11 +15,9 @@ protocol RunesViewControllerProtocol: AnyObject {
 // MARK: StoriesViewController
 class RunesViewController: UIViewController {
 
-    private weak var viewModel: RunesViewModelProtocol?
+    private var viewModel: RunesViewModelProtocol?
     private var collectionView: UICollectionView?
     private var runesDataProvider: RunesDataProvider?
-    
-    
     
     init(viewModel: RunesViewModelProtocol) {
         self.viewModel = viewModel
@@ -29,6 +27,7 @@ class RunesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel = RunesViewModel()
         view.backgroundColor = .purple
         title = K.TabBarTitles.runes
         setupCollectionView()

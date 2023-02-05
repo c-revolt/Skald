@@ -12,8 +12,7 @@ enum RunesSection: Int, CaseIterable {
 }
 
 final class RunesDataProvider: NSObject {
-    var runesViewModel: RunesViewModelProtocol?
-    //let storiesFromJSON = Bundle.main.decode([Story].self, from: "storiesData.json")
+    var runesViewModel = RunesViewModel()
 }
 
 extension RunesDataProvider: UICollectionViewDelegate {
@@ -26,23 +25,22 @@ extension RunesDataProvider: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let viewModel = runesViewModel?.runesFromJSON else { return 0 }
-        return viewModel.count
+        let viewModel = runesViewModel
+        return viewModel.numberOfRows()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let model = runesViewModel?.runes[indexPath.row] else { fatalError() }
-
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: RunesViewCell.reusedID,
-            for: indexPath) as? RunesViewCell else { return UICollectionViewCell() }
-        print(model)
-        cell.update(with: Rune(runeTitle: model.runeTitle, runeImage: nil, runeEttir: nil, runeMeaning: nil, runeDescription: nil))
+            for: indexPath
+        ) as? RunesViewCell else
+        { return UICollectionViewCell() }
+        
+        let cellViewModel = runesViewModel.runeCellViewModell(for: indexPath)
+        cell.viewModel = cellViewModel
         
         return cell
     }
-    
     
 }
 

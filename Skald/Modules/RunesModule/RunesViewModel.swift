@@ -11,9 +11,12 @@ import Foundation
 protocol RunesViewModelProtocol: AnyObject {
 
     var runes: [Rune] { get }
-    init(view: RunesViewControllerProtocol?, output: RunesOutput?)
-    func rune(at index: Int) -> Rune
     var runesFromJSON: [Rune] { get }
+    
+    init(view: RunesViewControllerProtocol?, output: RunesOutput?)
+    func numberOfRows() -> Int
+    func runeCellViewModell(for indexPath: IndexPath) -> RunesViewCellViewModelProtocol?
+   
     
 }
 
@@ -35,13 +38,15 @@ final class RunesViewModel {
 // MARK: StoriesViewModelProtocol
 extension RunesViewModel: RunesViewModelProtocol {
     
-    func loadData() {
-        
-    
+    func numberOfRows() -> Int {
+        var runes = runesFromJSON
+        return runes.count
     }
 
-    func rune(at index: Int) -> Rune {
-        runes += runesFromJSON
-        return runes[index]
+    func runeCellViewModell(for indexPath: IndexPath) -> RunesViewCellViewModelProtocol? {
+        let runes = runesFromJSON[indexPath.row]
+        return RunesViewCellViewModel(runes: runes)
     }
+
+    
 }

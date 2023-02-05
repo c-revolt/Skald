@@ -11,6 +11,12 @@ class RunesViewCell: UICollectionViewCell {
     
     // properties
     static let reusedID = K.runesCellReusedID
+    weak var viewModel: RunesViewCellViewModelProtocol? {
+        willSet(viewModel) {
+            guard let viewModel = viewModel else { return }
+            titleLabel.text = viewModel.titleString
+        }
+    }
     
     private let backVIew: UIView = {
         let view = UIView()
@@ -35,7 +41,8 @@ class RunesViewCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .systemBackground
+        contentView.backgroundColor = .green
+        
         viewHeirarchy()
         applyConstraints()
     }
@@ -45,33 +52,34 @@ class RunesViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func update(with model: Rune) {
-        self.titleLabel.text = model.runeTitle
-        self.runeImageView.image = UIImage(named: model.runeImage ?? "")
-    }
+//    func update(with model: viewModel ) {
+//        self.titleLabel.text = model.runeTitle
+//        //self.runeImageView.image = UIImage(named: model.runeImage ?? "")
+//    }
     
     private func viewHeirarchy() {
-        addSubview(backVIew)
-        backVIew.addSubview(runeImageView)
-        backVIew.addSubview(titleLabel)
+        //addSubview(backVIew)
+        //addSubview(runeImageView)
+        addSubview(titleLabel)
     }
     
     private func applyConstraints() {
+        backVIew.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         runeImageView.translatesAutoresizingMaskIntoConstraints = false
         
         
-        NSLayoutConstraint.activate([
-            runeImageView.topAnchor.constraint(equalTo: topAnchor),
-            runeImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            runeImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            runeImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            
-            backVIew.topAnchor.constraint(equalTo: topAnchor),
-            backVIew.leadingAnchor.constraint(equalTo: leadingAnchor),
-            backVIew.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backVIew.bottomAnchor.constraint(equalTo: bottomAnchor)
-        ])
+//        NSLayoutConstraint.activate([
+//            runeImageView.topAnchor.constraint(equalTo: topAnchor),
+//            runeImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            runeImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            runeImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+//            
+//            backVIew.topAnchor.constraint(equalTo: topAnchor),
+//            backVIew.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            backVIew.trailingAnchor.constraint(equalTo: trailingAnchor),
+//            backVIew.bottomAnchor.constraint(equalTo: bottomAnchor)
+//        ])
         
         
         NSLayoutConstraint.activate([
