@@ -41,6 +41,8 @@ class RunesViewController: UIViewController {
     private func setupCollectionView() {
         runesDataProvider = RunesDataProvider()
         let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.size.width - 20, height: self.view.bounds.size.height / 2)
+        layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collectionView = collectionView else { return }
         

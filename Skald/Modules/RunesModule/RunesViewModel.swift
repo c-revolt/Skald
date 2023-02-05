@@ -39,7 +39,7 @@ final class RunesViewModel {
 extension RunesViewModel: RunesViewModelProtocol {
     
     func numberOfRows() -> Int {
-        var runes = runesFromJSON
+        let runes = runesFromJSON
         return runes.count
     }
 
