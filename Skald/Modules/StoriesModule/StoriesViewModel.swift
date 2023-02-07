@@ -11,9 +11,10 @@ import Foundation
 protocol StoriesViewModelProtocol: AnyObject {
 
     var stories: [Story] { get }
-    init(view: StoriesViewControllerProtocol?, output: StoriesOutput?)
-    func story(at index: Int) -> Story
     var storiesFromJSON: [Story] { get }
+    init(view: StoriesViewControllerProtocol?, output: StoriesOutput?)
+    func numberOfRows() -> Int
+    func storieCellViewModell(for indexPath: IndexPath) -> StoriesViewCellViewModelProtocol?
     
 }
 
@@ -36,7 +37,14 @@ final class StoriesViewModel {
 // MARK: StoriesViewModelProtocol
 extension StoriesViewModel: StoriesViewModelProtocol {
     
-    func story(at index: Int) -> Story {
-        return stories[index]
+    
+    func numberOfRows() -> Int {
+        let stories = storiesFromJSON
+        return stories.count
+    }
+
+    func storieCellViewModell(for indexPath: IndexPath) -> StoriesViewCellViewModelProtocol? {
+        let stories = storiesFromJSON[indexPath.row]
+        return StoriesViewCellViewModel(stories: stories)
     }
 }

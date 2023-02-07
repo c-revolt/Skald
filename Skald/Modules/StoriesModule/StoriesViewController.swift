@@ -31,6 +31,7 @@ class StoriesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
+        title = K.TabBarTitles.stories
         setupCollectionView()
     }
     
@@ -42,7 +43,10 @@ class StoriesViewController: UIViewController {
     private func setupCollectionView() {
         storiesDataProvider = StoriesDataProvider()
         
-        collectionView = UICollectionView(frame: .zero, collectionViewLayout: resizableLayout)
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.size.width, height: 130)
+        layout.scrollDirection = .vertical
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collectionView = collectionView else { return }
         
         view.addSubview(collectionView)

@@ -12,10 +12,21 @@ class StoriesViewCell: UICollectionViewCell {
     // properties
     static let reusedID = K.storiesCellReusedID
     
+    weak var viewModel: StoriesViewCellViewModelProtocol? {
+        willSet(viewModel) {
+            guard let viewModel = viewModel,
+                  let storyImage = viewModel.imageString else { return }
+            titleLabel.text = viewModel.titleString
+            backgroundImageView.image = UIImage(named: storyImage)
+            // runeImage
+            
+        }
+    }
+    
     // backgroundImageView
     let backgroundImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleToFill
         return imageView
     }()
     
@@ -47,11 +58,6 @@ class StoriesViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func update(with model: Story) {
-        self.titleLabel.text = model.storyTitle
-        self.backgroundImageView.image = UIImage(named: model.storyImage ?? "")
-    }
-    
     private func viewHeirarchy() {
         addSubview(backgroundImageView)
         backgroundImageView.addSubview(shadowView)
@@ -64,17 +70,16 @@ class StoriesViewCell: UICollectionViewCell {
         
         
         NSLayoutConstraint.activate([
-            backgroundImageView.topAnchor.constraint(equalTo: topAnchor),
-            backgroundImageView.leadingAnchor.constraint(equalTo: leadingAnchor),
-            backgroundImageView.trailingAnchor.constraint(equalTo: trailingAnchor),
-            backgroundImageView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            backgroundImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
+            backgroundImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-            shadowView.topAnchor.constraint(equalTo: backgroundImageView.topAnchor),
-            shadowView.leadingAnchor.constraint(equalTo: backgroundImageView.leadingAnchor),
-            shadowView.trailingAnchor.constraint(equalTo: backgroundImageView.trailingAnchor),
-            shadowView.bottomAnchor.constraint(equalTo: backgroundImageView.bottomAnchor)
+//            shadowView.topAnchor.constraint(equalTo: backgroundImageView.topAnchor),
+//            shadowView.leadingAnchor.constraint(equalTo: backgroundImageView.leadingAnchor),
+//            shadowView.trailingAnchor.constraint(equalTo: backgroundImageView.trailingAnchor),
+//            shadowView.bottomAnchor.constraint(equalTo: backgroundImageView.bottomAnchor)
         ])
-        
         
         NSLayoutConstraint.activate([
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),

@@ -12,7 +12,7 @@ enum StoriesSection: Int, CaseIterable {
 }
 
 final class StoriesDataProvider: NSObject {
-    var storiesViewModel: StoriesViewModelProtocol?
+    var storiesViewModel = StoriesViewModel()
     //let storiesFromJSON = Bundle.main.decode([Story].self, from: "storiesData.json")
 }
 
@@ -26,21 +26,17 @@ extension StoriesDataProvider: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        guard let viewModel = storiesViewModel else { return 0 }
-        return viewModel.stories.count
+        let viewModel = storiesViewModel
+        return viewModel.numberOfRows()
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        guard let viewModel = storiesViewModel?.storiesFromJSON[indexPath.row] else { fatalError() }
-        //let stories = storiesFromJSON[indexPath.item]
-
-        
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: StoriesViewCell.reusedID,
             for: indexPath) as? StoriesViewCell else { return UICollectionViewCell() }
-        print(viewModel)
-        cell.update(with: viewModel)
+        
+        let cellViewModel = storiesViewModel.storieCellViewModell(for: indexPath)
+        cell.viewModel = cellViewModel
         
         return cell
     }

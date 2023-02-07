@@ -15,10 +15,11 @@ final class RunesDataProvider: NSObject {
     var runesViewModel = RunesViewModel()
 }
 
+// MARK: UICollectionViewDelegate
 extension RunesDataProvider: UICollectionViewDelegate {
     
 }
-
+// MARK: UICollectionViewDataSource
 extension RunesDataProvider: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return RunesSection.allCases.count
@@ -43,5 +44,4 @@ extension RunesDataProvider: UICollectionViewDataSource {
     }
     
 }
-
 

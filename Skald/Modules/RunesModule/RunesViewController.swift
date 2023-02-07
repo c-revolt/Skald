@@ -15,10 +15,12 @@ protocol RunesViewControllerProtocol: AnyObject {
 // MARK: StoriesViewController
 class RunesViewController: UIViewController {
 
+    // properties
     private var viewModel: RunesViewModelProtocol?
     private var collectionView: UICollectionView?
     private var runesDataProvider: RunesDataProvider?
     
+    // lifecircle
     init(viewModel: RunesViewModelProtocol) {
         self.viewModel = viewModel
         
@@ -38,10 +40,11 @@ class RunesViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // methods
     private func setupCollectionView() {
         runesDataProvider = RunesDataProvider()
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: self.view.bounds.size.width - 20, height: self.view.bounds.size.height / 2)
+        layout.itemSize = CGSize(width: self.view.bounds.size.width - 20, height: (self.view.bounds.size.height / 2) - 20)
         layout.scrollDirection = .vertical
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         guard let collectionView = collectionView else { return }

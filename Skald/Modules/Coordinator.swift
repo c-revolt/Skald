@@ -51,8 +51,8 @@ class Coordinator {
                                                                        image: UIImage(systemName: K.TabBarTitles.settingsIcon),
                                                                        tag: 3)
         
-        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.4051911831, green: 0.8323276639, blue: 0.628583014, alpha: 1)
-        //tabBarController.tabBar.tintColor = .white
+        //tabBarController.tabBar.tintColor = #colorLiteral(red: 0.4051911831, green: 0.8323276639, blue: 0.628583014, alpha: 1)
+        tabBarController.tabBar.tintColor = .white
         
     }
     

@@ -17,6 +17,7 @@
 		D000941C298E8491009E1857 /* RunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941B298E8491009E1857 /* RunesViewController.swift */; };
 		D000941F298E86A8009E1857 /* RunesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941E298E86A8009E1857 /* RunesViewCell.swift */; };
 		D0009421298F95C7009E1857 /* RunesViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009420298F95C7009E1857 /* RunesViewCellModel.swift */; };
+		D000942329927A1E009E1857 /* StoriesViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */; };
 		D046901E29530172002A536D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901D29530172002A536D /* AppDelegate.swift */; };
 		D046902029530172002A536D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901F29530172002A536D /* SceneDelegate.swift */; };
 		D046902229530172002A536D /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* StoriesViewController.swift */; };
@@ -65,6 +66,7 @@
 		D000941B298E8491009E1857 /* RunesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewController.swift; sourceTree = "<group>"; };
 		D000941E298E86A8009E1857 /* RunesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewCell.swift; sourceTree = "<group>"; };
 		D0009420298F95C7009E1857 /* RunesViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewCellModel.swift; sourceTree = "<group>"; };
+		D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCellViewModel.swift; sourceTree = "<group>"; };
 		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				D046905B2955C1B2002A536D /* StoriesViewCell.swift */,
+				D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -386,6 +389,7 @@
 				D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */,
 				D0009418298E8320009E1857 /* RunesViewModel.swift in Sources */,
 				D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */,
+				D000942329927A1E009E1857 /* StoriesViewCellViewModel.swift in Sources */,
 				D04690642955C504002A536D /* ResizableLayout.swift in Sources */,
 				D000941C298E8491009E1857 /* RunesViewController.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,

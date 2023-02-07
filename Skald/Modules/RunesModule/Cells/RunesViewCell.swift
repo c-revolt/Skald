@@ -33,7 +33,7 @@ class RunesViewCell: UICollectionViewCell {
 
     let runeImageView: UIImageView = {
         let imageView = UIImageView()
-        imageView.contentMode = .scaleAspectFill
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -70,6 +70,14 @@ class RunesViewCell: UICollectionViewCell {
         return label
     }()
     
+    var container: UIStackView = {
+        let stackView = UIStackView()
+        stackView.axis = .vertical
+        stackView.spacing = 10
+        stackView.backgroundColor = .clear
+        return stackView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.backgroundColor = .systemBackground
@@ -85,15 +93,23 @@ class RunesViewCell: UICollectionViewCell {
     
     private func viewHeirarchy() {
         addSubview(backVIew)
-        backVIew.addSubview(titleLabel)
-        backVIew.addSubview(runeImageView)
-        backVIew.addSubview(ettirLabel)
-        backVIew.addSubview(meaningLabel)
-        backVIew.addSubview(overviewLabel)
+        backVIew.addSubview(container)
+        container.addArrangedSubview(titleLabel)
+        container.addArrangedSubview(runeImageView)
+        container.addArrangedSubview(ettirLabel)
+        container.addArrangedSubview(meaningLabel)
+        container.addArrangedSubview(overviewLabel)
+        
+//        backVIew.addSubview(titleLabel)
+//        backVIew.addSubview(runeImageView)
+//        backVIew.addSubview(ettirLabel)
+//        backVIew.addSubview(meaningLabel)
+//        backVIew.addSubview(overviewLabel)
     }
     
     private func applyConstraints() {
         backVIew.translatesAutoresizingMaskIntoConstraints = false
+        container.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         runeImageView.translatesAutoresizingMaskIntoConstraints = false
         ettirLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -108,30 +124,30 @@ class RunesViewCell: UICollectionViewCell {
             backVIew.trailingAnchor.constraint(equalTo: trailingAnchor),
             backVIew.bottomAnchor.constraint(equalTo: bottomAnchor),
             
-            titleLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
-            titleLabel.topAnchor.constraint(equalTo: backVIew.topAnchor, constant: 15),
-
-            runeImageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 10),
-            runeImageView.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
-            runeImageView.heightAnchor.constraint(equalToConstant: 100),
+            container.topAnchor.constraint(equalTo: backVIew.topAnchor, constant: 15),
+            container.leadingAnchor.constraint(equalTo: backVIew.leadingAnchor, constant: 15),
+            container.trailingAnchor.constraint(equalTo: backVIew.trailingAnchor, constant: -15),
+            container.bottomAnchor.constraint(equalTo: backVIew.bottomAnchor, constant: -15),
+            
+//            titleLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
+//            titleLabel.topAnchor.constraint(equalTo: backVIew.topAnchor, constant: 15),
+//
+//,
+//            runeImageView.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
+            runeImageView.heightAnchor.constraint(equalToConstant: 80),
             runeImageView.widthAnchor.constraint(equalToConstant: 40),
-            
-            ettirLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
-            ettirLabel.topAnchor.constraint(equalTo: runeImageView.bottomAnchor, constant: 10),
-            
-            meaningLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
-            meaningLabel.topAnchor.constraint(equalTo: ettirLabel.bottomAnchor, constant: 10),
-            
-            //overviewLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
-            overviewLabel.topAnchor.constraint(equalTo: meaningLabel.bottomAnchor, constant: 10),
-            overviewLabel.leadingAnchor.constraint(equalTo: backVIew.leadingAnchor, constant: 10),
-            overviewLabel.trailingAnchor.constraint(equalTo: backVIew.trailingAnchor, constant: -10),
-            overviewLabel.bottomAnchor.constraint(equalTo: backVIew.bottomAnchor, constant: -10)
-            
-        ])
-        
-        
-        NSLayoutConstraint.activate([
+//
+//            ettirLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
+//            ettirLabel.topAnchor.constraint(equalTo: runeImageView.bottomAnchor, constant: 10),
+//
+//            meaningLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
+//            meaningLabel.topAnchor.constraint(equalTo: ettirLabel.bottomAnchor, constant: 10),
+//
+//            //overviewLabel.centerXAnchor.constraint(equalTo: backVIew.centerXAnchor),
+//            overviewLabel.topAnchor.constraint(equalTo: meaningLabel.bottomAnchor, constant: 10),
+//            overviewLabel.leadingAnchor.constraint(equalTo: backVIew.leadingAnchor, constant: 10),
+//            overviewLabel.trailingAnchor.constraint(equalTo: backVIew.trailingAnchor, constant: -10),
+//            overviewLabel.bottomAnchor.constraint(equalTo: backVIew.bottomAnchor, constant: -10)
             
         ])
     }
