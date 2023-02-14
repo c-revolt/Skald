@@ -22,7 +22,7 @@ extension StoriesDataProvider: UICollectionViewDelegate {
         let viewModel = storiesViewModel
         viewModel.selectedRow(atIndexPath: indexPath)
         let detailView = DetailStoryViewController()
-        detailView.present(detailView, animated: true)
+        detailView.modalPresentationStyle = .fullScreen
     }
 }
 

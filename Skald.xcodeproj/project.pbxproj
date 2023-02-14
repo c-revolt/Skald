@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		44C66CADFC4E0D446B39E2A9 /* Pods_Skald_SkaldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */; };
-		6EDDCBBDC8E64FA53824F308 /* Pods_SkaldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */; };
-		8825B7A2885CEA546A274CE5 /* Pods_Skald.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */; };
+		7C18EE24A04FEB743A489A93 /* Pods_Skald.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7177B7828CD0355E4F25383A /* Pods_Skald.framework */; };
 		D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009409298E5F98009E1857 /* StoriesDataProvider.swift */; };
 		D0009412298E7A7A009E1857 /* dailyRuneMention.json in Resources */ = {isa = PBXBuildFile; fileRef = D0009411298E7A7A009E1857 /* dailyRuneMention.json */; };
 		D000942329927A1E009E1857 /* StoriesViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */; };
@@ -22,7 +20,6 @@
 		D046902229530172002A536D /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* StoriesViewController.swift */; };
 		D046902729530177002A536D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D046902629530177002A536D /* Assets.xcassets */; };
 		D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D046902829530177002A536D /* LaunchScreen.storyboard */; };
-		D046903529530177002A536D /* SkaldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903429530177002A536D /* SkaldTests.swift */; };
 		D046903F29530178002A536D /* SkaldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046903E29530178002A536D /* SkaldUITests.swift */; };
 		D046904129530178002A536D /* SkaldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */; };
 		D046904E2953048F002A536D /* storiesData.json in Resources */ = {isa = PBXBuildFile; fileRef = D046904D2953048F002A536D /* storiesData.json */; };
@@ -59,15 +56,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.debug.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.debug.xcconfig"; sourceTree = "<group>"; };
-		14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald-SkaldUITests.debug.xcconfig"; path = "Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaldTests.debug.xcconfig"; path = "Target Support Files/Pods-SkaldTests/Pods-SkaldTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skald_SkaldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skald.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaldTests.release.xcconfig"; path = "Target Support Files/Pods-SkaldTests/Pods-SkaldTests.release.xcconfig"; sourceTree = "<group>"; };
-		88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.release.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.release.xcconfig"; sourceTree = "<group>"; };
-		9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald-SkaldUITests.release.xcconfig"; path = "Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests.release.xcconfig"; sourceTree = "<group>"; };
-		B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkaldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6922D043A4BEA1E1BAFE846C /* Pods-Skald.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.release.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.release.xcconfig"; sourceTree = "<group>"; };
+		7177B7828CD0355E4F25383A /* Pods_Skald.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skald.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		729A32704A2BA7CA00514A82 /* Pods-Skald.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.debug.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.debug.xcconfig"; sourceTree = "<group>"; };
 		D0009409298E5F98009E1857 /* StoriesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDataProvider.swift; sourceTree = "<group>"; };
 		D0009411298E7A7A009E1857 /* dailyRuneMention.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyRuneMention.json; sourceTree = "<group>"; };
 		D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCellViewModel.swift; sourceTree = "<group>"; };
@@ -75,16 +66,13 @@
 		D0009429299516AD009E1857 /* DetailStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewController.swift; sourceTree = "<group>"; };
 		D000942B299516BC009E1857 /* DetailStoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewModel.swift; sourceTree = "<group>"; };
 		D000942D299516CF009E1857 /* DetailStoryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryDataProvider.swift; sourceTree = "<group>"; };
-		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D046902129530172002A536D /* StoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewController.swift; sourceTree = "<group>"; };
 		D046902629530177002A536D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D046902929530177002A536D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D046902B29530177002A536D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D046903029530177002A536D /* SkaldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046903429530177002A536D /* SkaldTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldTests.swift; sourceTree = "<group>"; };
-		D046903A29530178002A536D /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046903E29530178002A536D /* SkaldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITests.swift; sourceTree = "<group>"; };
 		D046904029530178002A536D /* SkaldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkaldUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D046904D2953048F002A536D /* storiesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = storiesData.json; sourceTree = "<group>"; };
@@ -101,6 +89,9 @@
 		D050FD78299B786F00324CEC /* SettingsIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIO.swift; sourceTree = "<group>"; };
 		D050FD7A299B787900324CEC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D050FD7C299B788700324CEC /* SettingsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataProvider.swift; sourceTree = "<group>"; };
+		D08BA013299B9C7400377938 /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Skald.app; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/Skald.app"; sourceTree = "<absolute>"; };
+		D08BA014299B9C7400377938 /* SkaldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkaldTests.xctest; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/SkaldTests.xctest"; sourceTree = "<absolute>"; };
+		D08BA015299B9C7400377938 /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkaldUITests.xctest; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/SkaldUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8825B7A2885CEA546A274CE5 /* Pods_Skald.framework in Frameworks */,
+				7C18EE24A04FEB743A489A93 /* Pods_Skald.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +107,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EDDCBBDC8E64FA53824F308 /* Pods_SkaldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,21 +114,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44C66CADFC4E0D446B39E2A9 /* Pods_Skald_SkaldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		253A967D31DA6661307DC302 /* Frameworks */ = {
+		C1020BC8B370B1EFF02895A1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */,
-				2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */,
-				B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */,
+				729A32704A2BA7CA00514A82 /* Pods-Skald.debug.xcconfig */,
+				6922D043A4BEA1E1BAFE846C /* Pods-Skald.release.xcconfig */,
 			);
-			name = Frameworks;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		D000940B298E5FA3009E1857 /* Cells */ = {
@@ -189,20 +178,9 @@
 				D046901C29530172002A536D /* Skald */,
 				D046903329530177002A536D /* SkaldTests */,
 				D046903D29530178002A536D /* SkaldUITests */,
-				D046901B29530172002A536D /* Products */,
-				FADE9DDE09AAF76996522CCB /* Pods */,
-				253A967D31DA6661307DC302 /* Frameworks */,
+				C1020BC8B370B1EFF02895A1 /* Pods */,
+				D3AFE5F5FEB927C6C5CD631F /* Frameworks */,
 			);
-			sourceTree = "<group>";
-		};
-		D046901B29530172002A536D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D046901A29530172002A536D /* Skald.app */,
-				D046903029530177002A536D /* SkaldTests.xctest */,
-				D046903A29530178002A536D /* SkaldUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		D046901C29530172002A536D /* Skald */ = {
@@ -286,18 +264,12 @@
 			path = SettingsModule;
 			sourceTree = "<group>";
 		};
-		FADE9DDE09AAF76996522CCB /* Pods */ = {
+		D3AFE5F5FEB927C6C5CD631F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */,
-				88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */,
-				14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */,
-				9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */,
-				279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */,
-				6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */,
+				7177B7828CD0355E4F25383A /* Pods_Skald.framework */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,11 +279,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904429530178002A536D /* Build configuration list for PBXNativeTarget "Skald" */;
 			buildPhases = (
-				23C22DD904ECDDB4DC3003A2 /* [CP] Check Pods Manifest.lock */,
+				3CB2F1BC1340D6E0B54FA5ED /* [CP] Check Pods Manifest.lock */,
 				D046901629530172002A536D /* Sources */,
 				D046901729530172002A536D /* Frameworks */,
 				D046901829530172002A536D /* Resources */,
-				EB5A46CC692F88119E841595 /* [CP] Embed Pods Frameworks */,
+				3BEA45AF07CFFF2506B48153 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,14 +291,13 @@
 			);
 			name = Skald;
 			productName = Skald;
-			productReference = D046901A29530172002A536D /* Skald.app */;
+			productReference = D08BA013299B9C7400377938 /* Skald.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D046902F29530177002A536D /* SkaldTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904729530178002A536D /* Build configuration list for PBXNativeTarget "SkaldTests" */;
 			buildPhases = (
-				58B42FA524F499B8CE282DB5 /* [CP] Check Pods Manifest.lock */,
 				D046902C29530177002A536D /* Sources */,
 				D046902D29530177002A536D /* Frameworks */,
 				D046902E29530177002A536D /* Resources */,
@@ -338,18 +309,16 @@
 			);
 			name = SkaldTests;
 			productName = SkaldTests;
-			productReference = D046903029530177002A536D /* SkaldTests.xctest */;
+			productReference = D08BA014299B9C7400377938 /* SkaldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D046903929530178002A536D /* SkaldUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904A29530178002A536D /* Build configuration list for PBXNativeTarget "SkaldUITests" */;
 			buildPhases = (
-				427853B7F2B8AF4C5ED77DC1 /* [CP] Check Pods Manifest.lock */,
 				D046903629530178002A536D /* Sources */,
 				D046903729530178002A536D /* Frameworks */,
 				D046903829530178002A536D /* Resources */,
-				2FD1532CD7C5C105C8FEE69E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,7 +327,7 @@
 			);
 			name = SkaldUITests;
 			productName = SkaldUITests;
-			productReference = D046903A29530178002A536D /* SkaldUITests.xctest */;
+			productReference = D08BA015299B9C7400377938 /* SkaldUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -376,11 +345,9 @@
 					};
 					D046902F29530177002A536D = {
 						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = D046901929530172002A536D;
 					};
 					D046903929530178002A536D = {
 						CreatedOnToolsVersion = 14.0.1;
-						TestTargetID = D046901929530172002A536D;
 					};
 				};
 			};
@@ -393,7 +360,7 @@
 				Base,
 			);
 			mainGroup = D046901129530172002A536D;
-			productRefGroup = D046901B29530172002A536D /* Products */;
+			productRefGroup = D046901129530172002A536D;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -433,7 +400,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23C22DD904ECDDB4DC3003A2 /* [CP] Check Pods Manifest.lock */ = {
+		3BEA45AF07CFFF2506B48153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CB2F1BC1340D6E0B54FA5ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -453,84 +437,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2FD1532CD7C5C105C8FEE69E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		427853B7F2B8AF4C5ED77DC1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Skald-SkaldUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		58B42FA524F499B8CE282DB5 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SkaldTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EB5A46CC692F88119E841595 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -569,7 +475,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D046903529530177002A536D /* SkaldTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,7 +630,7 @@
 		};
 		D046904529530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */;
+			baseConfigurationReference = 729A32704A2BA7CA00514A82 /* Pods-Skald.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -757,7 +662,7 @@
 		};
 		D046904629530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */;
+			baseConfigurationReference = 6922D043A4BEA1E1BAFE846C /* Pods-Skald.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -789,10 +694,8 @@
 		};
 		D046904829530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
@@ -804,16 +707,13 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skald";
 			};
 			name = Debug;
 		};
 		D046904929530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
@@ -825,13 +725,11 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Skald.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Skald";
 			};
 			name = Release;
 		};
 		D046904B29530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -841,16 +739,15 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Skald;
 			};
 			name = Debug;
 		};
 		D046904C29530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -860,10 +757,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Skald;
 			};
 			name = Release;
 		};

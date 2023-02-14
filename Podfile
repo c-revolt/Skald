@@ -6,15 +6,6 @@ target 'Skald' do
   use_frameworks!
 
   # Pods for Skald
-pod "ViewAnimator"
-
-  target 'SkaldTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'SkaldUITests' do
-    # Pods for testing
-  end
+pod 'ViewAnimator'
 
 end

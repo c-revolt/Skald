@@ -11,7 +11,7 @@ protocol StoriesViewCellViewModelProtocol: AnyObject {
    
     var titleString: String? { get }
     var imageString: String? { get }
-    var runeString: String? { get }
+    //var runeString: String? { get }
     var contentString: String? { get }
     
 }
@@ -34,11 +34,6 @@ extension StoriesViewCellViewModel: StoriesViewCellViewModelProtocol {
     var imageString: String? {
         guard let stories = stories else { return "Unknown Error" }
         return stories.storyImage
-    }
-    
-    var runeString: String? {
-        guard let stories = stories else { return "Unknown Error" }
-        return stories.storyRune
     }
     
     var contentString: String? {

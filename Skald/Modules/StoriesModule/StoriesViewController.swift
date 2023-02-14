@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import ViewAnimator
+
 
 // MARK: StoriesViewControllerProtocol
 protocol StoriesViewControllerProtocol: AnyObject {
@@ -38,6 +40,17 @@ class StoriesViewController: UIViewController {
         setupNavigationBar()
         setupCollectionView()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let animation = AnimationType.from(direction: .top, offset: 300)
+        guard let collectionView = collectionView else { return }
+        UIView.animate(views: collectionView.visibleCells,
+                       animations: [animation],
+                       delay: 0,
+                       duration: 2)
+    }
+    
     override func viewDidLayoutSubviews() {
         collectionView?.frame = view.bounds
     }
@@ -70,15 +83,34 @@ class StoriesViewController: UIViewController {
     
     private func setupNavigationBar() {
         title = K.TabBarTitles.stories
-        let plusImage = UIImage(systemName: "slider.vertical.3")
-        let barButtonItem = UIBarButtonItem(image: plusImage, style: .plain, target: self, action: #selector(tappedRightBarButton))
-        barButtonItem.tintColor = .white
-        navigationItem.rightBarButtonItem = barButtonItem
+        let settingsImage = UIImage(systemName: "slider.vertical.3")
+        let settingsBarButtonItem = UIBarButtonItem(
+            image: settingsImage,
+            style: .plain,
+            target: self,
+            action: #selector(tappedRightBarButton)
+        )
+        
+        let searchImage = UIImage(systemName: "magnifyingglass")
+        let searchBarButtonIte = UIBarButtonItem(
+            image: searchImage,
+            style: .plain,
+            target: self,
+            action: #selector(tappedSearchBarButton))
+        
+        settingsBarButtonItem.tintColor = .white
+        searchBarButtonIte.tintColor = .white
+        
+        navigationItem.rightBarButtonItems = [settingsBarButtonItem, searchBarButtonIte]
         //navigationController?.navigationBar.prefersLargeTitles = true
     }
     
     @objc private func tappedRightBarButton() {
         viewModel?.tappedRightBarButton()
+    }
+    
+    @objc private func tappedSearchBarButton() {
+        print(#function)
     }
 }
 

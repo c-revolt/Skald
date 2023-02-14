@@ -18,8 +18,7 @@ class StoriesViewCell: UICollectionViewCell {
                   let storyImage = viewModel.imageString else { return }
             titleLabel.text = viewModel.titleString
             backgroundImageView.image = UIImage(named: storyImage)
-            runeLabel.text = viewModel.runeString
-            // runeImage
+            
         }
     }
     
@@ -82,7 +81,7 @@ class StoriesViewCell: UICollectionViewCell {
         createGradient()
         shadowView.addSubview(backgroundImageView)
         addSubview(titleLabel)
-        addSubview(runeLabel)
+        //addSubview(runeLabel)
     }
     
     private func applyConstraints() {
@@ -106,10 +105,10 @@ class StoriesViewCell: UICollectionViewCell {
             
 
             
-            runeLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
-            runeLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
-            runeLabel.widthAnchor.constraint(equalToConstant: 50),
-            runeLabel.heightAnchor.constraint(equalToConstant: 50),
+//            runeLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+//            runeLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+//            runeLabel.widthAnchor.constraint(equalToConstant: 50),
+//            runeLabel.heightAnchor.constraint(equalToConstant: 50),
 
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
             titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
