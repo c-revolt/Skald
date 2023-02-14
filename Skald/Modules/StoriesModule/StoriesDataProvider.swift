@@ -13,11 +13,17 @@ enum StoriesSection: Int, CaseIterable {
 
 final class StoriesDataProvider: NSObject {
     var storiesViewModel = StoriesViewModel()
-    //let storiesFromJSON = Bundle.main.decode([Story].self, from: "storiesData.json")
+    
 }
 
 extension StoriesDataProvider: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        let viewModel = storiesViewModel
+        viewModel.selectedRow(atIndexPath: indexPath)
+        let detailView = DetailStoryViewController()
+        detailView.present(detailView, animated: true)
+    }
 }
 
 extension StoriesDataProvider: UICollectionViewDataSource {

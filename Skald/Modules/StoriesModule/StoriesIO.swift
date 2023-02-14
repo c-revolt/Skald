@@ -12,7 +12,8 @@ protocol StoriesInput: AnyObject {
 }
 
 protocol StoriesOutput: AnyObject {
-    
+    func showDetails(_ story: Story)
+    func showSettingsViewController()
 }
 
 

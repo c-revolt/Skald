@@ -10,59 +10,42 @@ import UIKit
 class Coordinator {
     
     private let assembly: Assembly
-    private var tabBarController = UITabBarController()
+    private var navigationController: UINavigationController?
     
     init(assembly: Assembly) {
         self.assembly = assembly
     }
     
     func start(window: UIWindow) {
-        //let storiesVC = assembly.makeStories(output: self)
-        tabBarController.setViewControllers(
-            [
-                UINavigationController(rootViewController: assembly.makeStories(output: self)),
-                UINavigationController(rootViewController: assembly.makeRunes(output: self)),
-                UINavigationController(rootViewController: UIViewController()),
-                UINavigationController(rootViewController: UIViewController()),
-                
-            ],
-            animated: true
-        )
-        
-        setupTabBarController()
-        
-        window.rootViewController = tabBarController
+        let storiesView = assembly.makeStories(output: self)
+        navigationController = UINavigationController(rootViewController: storiesView)
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        
         window.overrideUserInterfaceStyle = .dark
     }
-    
-    private func setupTabBarController() {
-        tabBarController.viewControllers?[0].tabBarItem = UITabBarItem(title: K.TabBarTitles.stories,
-                                                                       image: UIImage(systemName: K.TabBarTitles.storiesIcon),
-                                                                       tag: 0)
-        tabBarController.viewControllers?[1].tabBarItem = UITabBarItem(title: K.TabBarTitles.runes,
-                                                                       image: UIImage(systemName: K.TabBarTitles.runesIcon),
-                                                                       tag: 1)
-        tabBarController.viewControllers?[2].tabBarItem = UITabBarItem(title: K.TabBarTitles.gallery,
-                                                                       image: UIImage(systemName: K.TabBarTitles.galleryIcon),
-                                                                       tag: 2)
-        tabBarController.viewControllers?[3].tabBarItem = UITabBarItem(title: K.TabBarTitles.settings,
-                                                                       image: UIImage(systemName: K.TabBarTitles.settingsIcon),
-                                                                       tag: 3)
-        
-        //tabBarController.tabBar.tintColor = #colorLiteral(red: 0.4051911831, green: 0.8323276639, blue: 0.628583014, alpha: 1)
-        tabBarController.tabBar.tintColor = .white
-        
-    }
-    
 }
 
 // MARK: StoriesOutput
 extension Coordinator: StoriesOutput {
-
+    func showDetails(_ story: Story) {
+        let detailsView = assembly.makeDetails(output: self, story: story)
+        navigationController?.pushViewController(detailsView, animated: true)
+    }
+    
+    func showSettingsViewController() {
+        let settingsVC = assembly.makeSettings(output: self)
+        //navigationController?.pushViewController(settingsVC, animated: true)
+        navigationController?.present(settingsVC, animated: true)
+    }
 }
 
-extension Coordinator: RunesOutput {
+extension Coordinator: DetailStoryOutput {
     
 }
+
+extension Coordinator: SettingsOutput {
+    
+}
+
+
+

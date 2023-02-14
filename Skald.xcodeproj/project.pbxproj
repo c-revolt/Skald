@@ -3,21 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44C66CADFC4E0D446B39E2A9 /* Pods_Skald_SkaldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */; };
+		6EDDCBBDC8E64FA53824F308 /* Pods_SkaldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */; };
+		8825B7A2885CEA546A274CE5 /* Pods_Skald.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */; };
 		D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009409298E5F98009E1857 /* StoriesDataProvider.swift */; };
-		D0009410298E7632009E1857 /* runesData.json in Resources */ = {isa = PBXBuildFile; fileRef = D000940F298E7632009E1857 /* runesData.json */; };
 		D0009412298E7A7A009E1857 /* dailyRuneMention.json in Resources */ = {isa = PBXBuildFile; fileRef = D0009411298E7A7A009E1857 /* dailyRuneMention.json */; };
-		D0009414298E8244009E1857 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009413298E8244009E1857 /* Rune.swift */; };
-		D0009416298E82EE009E1857 /* RunesIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009415298E82EE009E1857 /* RunesIO.swift */; };
-		D0009418298E8320009E1857 /* RunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009417298E8320009E1857 /* RunesViewModel.swift */; };
-		D000941A298E8406009E1857 /* RunesDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009419298E8406009E1857 /* RunesDataProvider.swift */; };
-		D000941C298E8491009E1857 /* RunesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941B298E8491009E1857 /* RunesViewController.swift */; };
-		D000941F298E86A8009E1857 /* RunesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000941E298E86A8009E1857 /* RunesViewCell.swift */; };
-		D0009421298F95C7009E1857 /* RunesViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009420298F95C7009E1857 /* RunesViewCellModel.swift */; };
 		D000942329927A1E009E1857 /* StoriesViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */; };
+		D00094282995169E009E1857 /* DetailStoryIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00094272995169E009E1857 /* DetailStoryIO.swift */; };
+		D000942A299516AD009E1857 /* DetailStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0009429299516AD009E1857 /* DetailStoryViewController.swift */; };
+		D000942C299516BC009E1857 /* DetailStoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000942B299516BC009E1857 /* DetailStoryViewModel.swift */; };
+		D000942E299516CF009E1857 /* DetailStoryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D000942D299516CF009E1857 /* DetailStoryDataProvider.swift */; };
 		D046901E29530172002A536D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901D29530172002A536D /* AppDelegate.swift */; };
 		D046902029530172002A536D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046901F29530172002A536D /* SceneDelegate.swift */; };
 		D046902229530172002A536D /* StoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046902129530172002A536D /* StoriesViewController.swift */; };
@@ -36,6 +35,10 @@
 		D046905E2955C24B002A536D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905D2955C24B002A536D /* Constants.swift */; };
 		D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D046905F2955C368002A536D /* Bundle-Decodable.swift */; };
 		D04690642955C504002A536D /* ResizableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04690632955C504002A536D /* ResizableLayout.swift */; };
+		D050FD77299B786300324CEC /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD76299B786300324CEC /* SettingsViewController.swift */; };
+		D050FD79299B786F00324CEC /* SettingsIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD78299B786F00324CEC /* SettingsIO.swift */; };
+		D050FD7B299B787900324CEC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD7A299B787900324CEC /* SettingsViewModel.swift */; };
+		D050FD7D299B788700324CEC /* SettingsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD7C299B788700324CEC /* SettingsDataProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,17 +59,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.debug.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.debug.xcconfig"; sourceTree = "<group>"; };
+		14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald-SkaldUITests.debug.xcconfig"; path = "Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaldTests.debug.xcconfig"; path = "Target Support Files/Pods-SkaldTests/Pods-SkaldTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skald_SkaldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skald.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkaldTests.release.xcconfig"; path = "Target Support Files/Pods-SkaldTests/Pods-SkaldTests.release.xcconfig"; sourceTree = "<group>"; };
+		88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald.release.xcconfig"; path = "Target Support Files/Pods-Skald/Pods-Skald.release.xcconfig"; sourceTree = "<group>"; };
+		9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skald-SkaldUITests.release.xcconfig"; path = "Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkaldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0009409298E5F98009E1857 /* StoriesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesDataProvider.swift; sourceTree = "<group>"; };
-		D000940F298E7632009E1857 /* runesData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = runesData.json; sourceTree = "<group>"; };
 		D0009411298E7A7A009E1857 /* dailyRuneMention.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dailyRuneMention.json; sourceTree = "<group>"; };
-		D0009413298E8244009E1857 /* Rune.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
-		D0009415298E82EE009E1857 /* RunesIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesIO.swift; sourceTree = "<group>"; };
-		D0009417298E8320009E1857 /* RunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewModel.swift; sourceTree = "<group>"; };
-		D0009419298E8406009E1857 /* RunesDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesDataProvider.swift; sourceTree = "<group>"; };
-		D000941B298E8491009E1857 /* RunesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewController.swift; sourceTree = "<group>"; };
-		D000941E298E86A8009E1857 /* RunesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewCell.swift; sourceTree = "<group>"; };
-		D0009420298F95C7009E1857 /* RunesViewCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunesViewCellModel.swift; sourceTree = "<group>"; };
 		D000942229927A1E009E1857 /* StoriesViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesViewCellViewModel.swift; sourceTree = "<group>"; };
+		D00094272995169E009E1857 /* DetailStoryIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryIO.swift; sourceTree = "<group>"; };
+		D0009429299516AD009E1857 /* DetailStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewController.swift; sourceTree = "<group>"; };
+		D000942B299516BC009E1857 /* DetailStoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryViewModel.swift; sourceTree = "<group>"; };
+		D000942D299516CF009E1857 /* DetailStoryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryDataProvider.swift; sourceTree = "<group>"; };
 		D046901A29530172002A536D /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D046901D29530172002A536D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D046901F29530172002A536D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +97,10 @@
 		D046905D2955C24B002A536D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D046905F2955C368002A536D /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
 		D04690632955C504002A536D /* ResizableLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableLayout.swift; sourceTree = "<group>"; };
+		D050FD76299B786300324CEC /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		D050FD78299B786F00324CEC /* SettingsIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIO.swift; sourceTree = "<group>"; };
+		D050FD7A299B787900324CEC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		D050FD7C299B788700324CEC /* SettingsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8825B7A2885CEA546A274CE5 /* Pods_Skald.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EDDCBBDC8E64FA53824F308 /* Pods_SkaldTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,12 +124,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44C66CADFC4E0D446B39E2A9 /* Pods_Skald_SkaldUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253A967D31DA6661307DC302 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E15A9621B9D635DA41C4A20 /* Pods_Skald.framework */,
+				2F1244F9EF1B558BE09EB76A /* Pods_Skald_SkaldUITests.framework */,
+				B71CDCCF6C1E25FBCD005D41 /* Pods_SkaldTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D000940B298E5FA3009E1857 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,26 +150,37 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D000940E298E75BB009E1857 /* RunesModule */ = {
+		D000942629951647009E1857 /* DetailStoryModule */ = {
 			isa = PBXGroup;
 			children = (
-				D0009413298E8244009E1857 /* Rune.swift */,
-				D0009415298E82EE009E1857 /* RunesIO.swift */,
-				D0009417298E8320009E1857 /* RunesViewModel.swift */,
-				D0009419298E8406009E1857 /* RunesDataProvider.swift */,
-				D000941B298E8491009E1857 /* RunesViewController.swift */,
-				D000941D298E8699009E1857 /* Cells */,
+				D00094272995169E009E1857 /* DetailStoryIO.swift */,
+				D0009429299516AD009E1857 /* DetailStoryViewController.swift */,
+				D000942B299516BC009E1857 /* DetailStoryViewModel.swift */,
+				D000942D299516CF009E1857 /* DetailStoryDataProvider.swift */,
 			);
-			path = RunesModule;
+			path = DetailStoryModule;
 			sourceTree = "<group>";
 		};
-		D000941D298E8699009E1857 /* Cells */ = {
+		D000946B2998FDDC009E1857 /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
-				D000941E298E86A8009E1857 /* RunesViewCell.swift */,
-				D0009420298F95C7009E1857 /* RunesViewCellModel.swift */,
+				D046901D29530172002A536D /* AppDelegate.swift */,
+				D046901F29530172002A536D /* SceneDelegate.swift */,
+				D046902629530177002A536D /* Assets.xcassets */,
+				D046902829530177002A536D /* LaunchScreen.storyboard */,
+				D046902B29530177002A536D /* Info.plist */,
+				D04690612955C4C5002A536D /* Utils */,
+				D04690622955C4D7002A536D /* JSONFiles */,
 			);
-			path = Cells;
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D000948A299A6CD6009E1857 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D046904F295304B1002A536D /* Story.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D046901129530172002A536D = {
@@ -154,6 +190,8 @@
 				D046903329530177002A536D /* SkaldTests */,
 				D046903D29530178002A536D /* SkaldUITests */,
 				D046901B29530172002A536D /* Products */,
+				FADE9DDE09AAF76996522CCB /* Pods */,
+				253A967D31DA6661307DC302 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,14 +208,9 @@
 		D046901C29530172002A536D /* Skald */ = {
 			isa = PBXGroup;
 			children = (
-				D046901D29530172002A536D /* AppDelegate.swift */,
-				D046901F29530172002A536D /* SceneDelegate.swift */,
-				D04690622955C4D7002A536D /* JSONFiles */,
-				D04690612955C4C5002A536D /* Utils */,
+				D000946B2998FDDC009E1857 /* SupportingFiles */,
+				D000948A299A6CD6009E1857 /* Models */,
 				D046905129530542002A536D /* Modules */,
-				D046902629530177002A536D /* Assets.xcassets */,
-				D046902829530177002A536D /* LaunchScreen.storyboard */,
-				D046902B29530177002A536D /* Info.plist */,
 			);
 			path = Skald;
 			sourceTree = "<group>";
@@ -204,7 +237,8 @@
 			children = (
 				D046905929531500002A536D /* Assembly.swift */,
 				D0469057295314A5002A536D /* Coordinator.swift */,
-				D000940E298E75BB009E1857 /* RunesModule */,
+				D050FD75299B77F000324CEC /* SettingsModule */,
+				D000942629951647009E1857 /* DetailStoryModule */,
 				D046905229530554002A536D /* StoriesModule */,
 			);
 			path = Modules;
@@ -213,7 +247,6 @@
 		D046905229530554002A536D /* StoriesModule */ = {
 			isa = PBXGroup;
 			children = (
-				D046904F295304B1002A536D /* Story.swift */,
 				D04690532953070A002A536D /* StoriesIO.swift */,
 				D046905529530718002A536D /* StoriesViewModel.swift */,
 				D0009409298E5F98009E1857 /* StoriesDataProvider.swift */,
@@ -237,10 +270,34 @@
 			isa = PBXGroup;
 			children = (
 				D046904D2953048F002A536D /* storiesData.json */,
-				D000940F298E7632009E1857 /* runesData.json */,
 				D0009411298E7A7A009E1857 /* dailyRuneMention.json */,
 			);
 			path = JSONFiles;
+			sourceTree = "<group>";
+		};
+		D050FD75299B77F000324CEC /* SettingsModule */ = {
+			isa = PBXGroup;
+			children = (
+				D050FD76299B786300324CEC /* SettingsViewController.swift */,
+				D050FD78299B786F00324CEC /* SettingsIO.swift */,
+				D050FD7A299B787900324CEC /* SettingsViewModel.swift */,
+				D050FD7C299B788700324CEC /* SettingsDataProvider.swift */,
+			);
+			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		FADE9DDE09AAF76996522CCB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */,
+				88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */,
+				14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */,
+				9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */,
+				279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */,
+				6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904429530178002A536D /* Build configuration list for PBXNativeTarget "Skald" */;
 			buildPhases = (
+				23C22DD904ECDDB4DC3003A2 /* [CP] Check Pods Manifest.lock */,
 				D046901629530172002A536D /* Sources */,
 				D046901729530172002A536D /* Frameworks */,
 				D046901829530172002A536D /* Resources */,
+				EB5A46CC692F88119E841595 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904729530178002A536D /* Build configuration list for PBXNativeTarget "SkaldTests" */;
 			buildPhases = (
+				58B42FA524F499B8CE282DB5 /* [CP] Check Pods Manifest.lock */,
 				D046902C29530177002A536D /* Sources */,
 				D046902D29530177002A536D /* Frameworks */,
 				D046902E29530177002A536D /* Resources */,
@@ -285,9 +345,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D046904A29530178002A536D /* Build configuration list for PBXNativeTarget "SkaldUITests" */;
 			buildPhases = (
+				427853B7F2B8AF4C5ED77DC1 /* [CP] Check Pods Manifest.lock */,
 				D046903629530178002A536D /* Sources */,
 				D046903729530178002A536D /* Frameworks */,
 				D046903829530178002A536D /* Resources */,
+				2FD1532CD7C5C105C8FEE69E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -323,7 +385,7 @@
 				};
 			};
 			buildConfigurationList = D046901529530172002A536D /* Build configuration list for PBXProject "Skald" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -348,7 +410,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D046904E2953048F002A536D /* storiesData.json in Resources */,
-				D0009410298E7632009E1857 /* runesData.json in Resources */,
 				D046902A29530177002A536D /* LaunchScreen.storyboard in Resources */,
 				D046902729530177002A536D /* Assets.xcassets in Resources */,
 				D0009412298E7A7A009E1857 /* dailyRuneMention.json in Resources */,
@@ -371,32 +432,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23C22DD904ECDDB4DC3003A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skald-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FD1532CD7C5C105C8FEE69E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skald-SkaldUITests/Pods-Skald-SkaldUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		427853B7F2B8AF4C5ED77DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Skald-SkaldUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B42FA524F499B8CE282DB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkaldTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5A46CC692F88119E841595 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Skald/Pods-Skald-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D046901629530172002A536D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D00094282995169E009E1857 /* DetailStoryIO.swift in Sources */,
 				D046905629530718002A536D /* StoriesViewModel.swift in Sources */,
 				D046905A29531500002A536D /* Assembly.swift in Sources */,
-				D000941F298E86A8009E1857 /* RunesViewCell.swift in Sources */,
 				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
-				D0009421298F95C7009E1857 /* RunesViewCellModel.swift in Sources */,
-				D000941A298E8406009E1857 /* RunesDataProvider.swift in Sources */,
 				D0469050295304B1002A536D /* Story.swift in Sources */,
+				D050FD77299B786300324CEC /* SettingsViewController.swift in Sources */,
 				D046905C2955C1B2002A536D /* StoriesViewCell.swift in Sources */,
 				D046905E2955C24B002A536D /* Constants.swift in Sources */,
-				D0009416298E82EE009E1857 /* RunesIO.swift in Sources */,
 				D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */,
-				D0009418298E8320009E1857 /* RunesViewModel.swift in Sources */,
+				D000942C299516BC009E1857 /* DetailStoryViewModel.swift in Sources */,
+				D000942A299516AD009E1857 /* DetailStoryViewController.swift in Sources */,
 				D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */,
+				D050FD79299B786F00324CEC /* SettingsIO.swift in Sources */,
+				D050FD7D299B788700324CEC /* SettingsDataProvider.swift in Sources */,
 				D000942329927A1E009E1857 /* StoriesViewCellViewModel.swift in Sources */,
+				D000942E299516CF009E1857 /* DetailStoryDataProvider.swift in Sources */,
 				D04690642955C504002A536D /* ResizableLayout.swift in Sources */,
-				D000941C298E8491009E1857 /* RunesViewController.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
-				D0009414298E8244009E1857 /* Rune.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
 				D0469058295314A5002A536D /* Coordinator.swift in Sources */,
+				D050FD7B299B787900324CEC /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -560,6 +725,7 @@
 		};
 		D046904529530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B926364FB20710B0AB1A2D0 /* Pods-Skald.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -567,7 +733,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Skald/Info.plist;
+				INFOPLIST_FILE = Skald/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -591,6 +757,7 @@
 		};
 		D046904629530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88061C5B154BAF116FB8D2B9 /* Pods-Skald.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -598,7 +765,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Skald/Info.plist;
+				INFOPLIST_FILE = Skald/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -622,6 +789,7 @@
 		};
 		D046904829530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 279E6A6DD82E9ACBBCC04A3F /* Pods-SkaldTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -629,7 +797,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -642,6 +810,7 @@
 		};
 		D046904929530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6323D0C3AA04B71A7CA1A54E /* Pods-SkaldTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -649,7 +818,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2S52Q5VDX5;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.a.pride.SkaldTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -662,6 +831,7 @@
 		};
 		D046904B29530178002A536D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14C63B85CEE856608D7E2F98 /* Pods-Skald-SkaldUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -680,6 +850,7 @@
 		};
 		D046904C29530178002A536D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C71165E5C7C701D1B8B90B2 /* Pods-Skald-SkaldUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

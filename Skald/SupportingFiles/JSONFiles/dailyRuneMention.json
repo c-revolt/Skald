@@ -1,0 +1,85 @@
+[
+    {
+        "id": 001
+        "rune": "ᚠ",
+        "runeTitle": "Fé (Феху, Феу, Фе)",
+        ""
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Древненорвежская Поэма",
+        "dailyRuneMention": "Богатство причиняет раздор в роду; волк подрастает в лесах."
+    },
+    {
+        "id": 002
+        "rune": "ᚠ",
+        "dailyRuneTitle": "Fé (Феху, Феу, Фе)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Древнеисландская Поэма",
+        "dailyRuneMention": "Богатство — это раздор в роду, пожар во время потопа и путь змеи."
+        
+    },
+    {
+        "id": 003
+        "rune": "ᚠ",
+        "dailyRuneTitle": "Fé (Феху, Феу, Фе)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Англосаксонская Поэма",
+        "dailyRuneMention": "Богатство — утешение всем людям, но должен человек каждый — щедро им делиться, если он хочет перед Господом славу обрести."
+        
+    },
+    {
+        "id": 004
+        "dailyRuneTitle": "Úr (У́руз, Ураз, Урус, Урас или Ур)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Старонорвежская Поэма",
+        "dailyRuneMention": "Окалина — от плохого железа; часто мчится олень по белому снегу."
+        
+    },
+    {
+        "id": 005
+        "dailyRuneTitle": "Úr (У́руз, Ураз, Урус, Урас или Ур)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Древнеисландская Поэма",
+        "dailyRuneMention": "Морось — это плач облаков, растворитель кромки льда, то, что ненавидит пастух."
+        
+    },
+    {
+        "id": 006
+        "dailyRuneTitle": "Úr (У́руз, Ураз, Урус, Урас или Ур)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Англосаксонская Поэма",
+        "dailyRuneMention": "Тур яр и великорог, свирепейший зверь, сражается рогами прославленный скиталец пустошей. Это отважное существо."
+        
+    },
+    {
+        "id": 007
+        "dailyRuneTitle": "Þurs (Ту́рисаз или Ту́рс)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Древнеисландская Поэма",
+        "dailyRuneMention": "Турс — это женское горе и обитель скал и муж жены-ётини Вард-руны."
+        
+    },
+    {
+        "id": 008
+        "dailyRuneTitle": "Þurs (Ту́рисаз или Ту́рс)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Старонорважская Поэма",
+        "dailyRuneMention": "Турс причиняет горе женщинам немногие рады несчастью."
+        
+    },
+    {
+        "id": 009
+        "dailyRuneTitle": "Þorn (Ту́рисаз или Ту́рс)",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "Англосаксонская Поэма",
+        "dailyRuneMention": "Шип (терн?) — жестоко остр, тану каждому схватившемуся — он зло, безмерно суров к человеку любому, что на нём отдыхает."
+        
+    },
+    {
+        "id": 010
+        "dailyRuneTitle": "",
+        "dailyRuneImage": "",
+        "dailyRineMentionTitle": "",
+        "dailyRuneMention": ""
+        
+    },
+]

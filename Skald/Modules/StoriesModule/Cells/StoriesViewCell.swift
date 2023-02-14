@@ -18,8 +18,8 @@ class StoriesViewCell: UICollectionViewCell {
                   let storyImage = viewModel.imageString else { return }
             titleLabel.text = viewModel.titleString
             backgroundImageView.image = UIImage(named: storyImage)
+            runeLabel.text = viewModel.runeString
             // runeImage
-            
         }
     }
     
@@ -40,9 +40,18 @@ class StoriesViewCell: UICollectionViewCell {
     // titleLabel
     var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 20)
+        label.font = .boldSystemFont(ofSize: 18)
         label.textAlignment = .center
         label.textColor = .white
+        label.numberOfLines = 0
+        return label
+    }()
+    
+    private var runeLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .red
+        label.font = .boldSystemFont(ofSize: 35)
+        label.textAlignment = .center
         return label
     }()
     
@@ -58,32 +67,54 @@ class StoriesViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    private func createGradient() {
+        let gradient = CAGradientLayer()
+        gradient.colors = [
+            UIColor.clear.cgColor,
+            UIColor.systemBackground.cgColor
+        ]
+        gradient.frame = bounds
+        layer.addSublayer(gradient)
+    }
+    
     private func viewHeirarchy() {
-        addSubview(backgroundImageView)
-        backgroundImageView.addSubview(shadowView)
+        addSubview(shadowView)
+        createGradient()
+        shadowView.addSubview(backgroundImageView)
         addSubview(titleLabel)
+        addSubview(runeLabel)
     }
     
     private func applyConstraints() {
+        shadowView.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         backgroundImageView.translatesAutoresizingMaskIntoConstraints = false
+        runeLabel.translatesAutoresizingMaskIntoConstraints = false
         
         
         NSLayoutConstraint.activate([
-            backgroundImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            backgroundImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
-            backgroundImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            backgroundImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
             
-//            shadowView.topAnchor.constraint(equalTo: backgroundImageView.topAnchor),
-//            shadowView.leadingAnchor.constraint(equalTo: backgroundImageView.leadingAnchor),
-//            shadowView.trailingAnchor.constraint(equalTo: backgroundImageView.trailingAnchor),
-//            shadowView.bottomAnchor.constraint(equalTo: backgroundImageView.bottomAnchor)
-        ])
-        
-        NSLayoutConstraint.activate([
+            shadowView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            shadowView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            shadowView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            shadowView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            
+            backgroundImageView.topAnchor.constraint(equalTo: shadowView.topAnchor),
+            backgroundImageView.leadingAnchor.constraint(equalTo: shadowView.leadingAnchor),
+            backgroundImageView.trailingAnchor.constraint(equalTo: shadowView.trailingAnchor),
+            backgroundImageView.bottomAnchor.constraint(equalTo: shadowView.bottomAnchor),
+            
+
+            
+            runeLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            runeLabel.leadingAnchor.constraint(equalTo: leadingAnchor),
+            runeLabel.widthAnchor.constraint(equalToConstant: 50),
+            runeLabel.heightAnchor.constraint(equalToConstant: 50),
+
             titleLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
-            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor)
+            titleLabel.centerYAnchor.constraint(equalTo: centerYAnchor),
+            titleLabel.widthAnchor.constraint(equalToConstant: 200)
+            
         ])
     }
 }

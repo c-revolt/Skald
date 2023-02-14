@@ -17,9 +17,17 @@ class Assembly {
         return view
     }
     
-    func makeRunes(output: RunesOutput) -> UIViewController {
-        let viewModel = RunesViewModel(output: output)
-        let view = RunesViewController(viewModel: viewModel)
+    func makeSettings(output: SettingsOutput) -> UIViewController {
+        let viewModel = SettingsViewModel(optput: output)
+        let view = SettingsViewController(viewModel: viewModel)
+        viewModel.view = view
+        
+        return view
+    }
+    
+    func makeDetails(output: DetailStoryOutput, story: Story) -> UIViewController {
+        let viewModel = DetailStoryViewModel(output: output, story: story)
+        let view = DetailStoryViewController(viewModel: viewModel)
         viewModel.view = view
         
         return view
