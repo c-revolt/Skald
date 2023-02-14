@@ -34,8 +34,9 @@ extension Coordinator: StoriesOutput {
     
     func showSettingsViewController() {
         let settingsVC = assembly.makeSettings(output: self)
-        //navigationController?.pushViewController(settingsVC, animated: true)
-        navigationController?.present(settingsVC, animated: true)
+        navigationController?.modalPresentationStyle = .fullScreen
+        navigationController?.pushViewController(settingsVC, animated: true)
+        
     }
 }
 

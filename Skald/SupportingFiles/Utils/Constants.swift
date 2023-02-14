@@ -10,18 +10,9 @@ import Foundation
 struct K {
     
     static let storiesCellReusedID = "StoriesViewCell"
-    static let runesCellReusedID = "RunesViewCell"
     
-    struct TabBarTitles {
-        // contorller's titles
-        static let stories = "Скальд"
-        static let runes = "Руны"
-        static let gallery = "Галерея"
-        static let settings = "Настройки"
-        // icon's system images
-        static let storiesIcon = "tropicalstorm"
-        static let runesIcon = "circle.circle"
-        static let galleryIcon = "eye"
-        static let settingsIcon = "square.grid.2x2"
-    }
+    static let detailStoryHeaderReusedID = "DetailStoryHeaderCell"
+    static let detailStoryOverviewReusedID = "DetailStoryOverviewCell"
+    
+    static let navigationMainTitle = "СКАЛЬД"
 }

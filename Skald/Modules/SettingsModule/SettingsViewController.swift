@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ViewAnimator
 
 protocol SettingsViewControllerProtocol: AnyObject {
     
@@ -29,7 +30,17 @@ class SettingsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        view.backgroundColor = .green
+        view.backgroundColor = .systemGray6
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let animation = AnimationType.from(direction: .top, offset: 300)
+        
+        UIView.animate(views: view.subviews,
+                       animations: [animation],
+                       duration: 2)
     }
 }
 

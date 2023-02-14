@@ -14,8 +14,8 @@ protocol DetailStoryViewControllerProtocol: AnyObject {
 class DetailStoryViewController: UIViewController {
     
     private var viewModel: DetailStoryViewModelProtocol? = nil
-    private var tableView: UITableView?
-    private var storiesDataProvider: DetailStoryDataProvider?
+    private var collectionView: UICollectionView?
+    private var storyDataProvider: DetailStoryDataProvider?
    // private var story: Story?
     
     init(viewModel: DetailStoryViewModelProtocol? = nil) {
@@ -31,14 +31,45 @@ class DetailStoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red
+        setupCollectionView()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        view.backgroundColor = .red
-        tableView?.reloadData()
-        
+    
+    
+    override func viewDidLayoutSubviews() {
+        collectionView?.frame = view.bounds
     }
+    
+    private func setupCollectionView() {
+        storyDataProvider = DetailStoryDataProvider()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: self.view.bounds.size.width, height: self.view.bounds.size.height)
+        layout.scrollDirection = .vertical
+        collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        guard let collectionView = collectionView else { return }
+        
+        view.addSubview(collectionView)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .systemBackground
+        collectionView.dataSource = storyDataProvider
+        collectionView.delegate = storyDataProvider
+        collectionView.decelerationRate = .fast
+        
+        collectionView.register(DetailStoryHeaderCell.self, forCellWithReuseIdentifier: DetailStoryHeaderCell.reusedID)
+        collectionView.register(DetailStoryOverviewCell.self, forCellWithReuseIdentifier: DetailStoryOverviewCell.reusedID)
+        
+        NSLayoutConstraint.activate(
+            [
+                collectionView.topAnchor.constraint(equalTo: view.topAnchor),
+                collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+                collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+                collectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            ]
+        )
+    }
+    
+    
 }
 
 

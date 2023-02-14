@@ -24,6 +24,7 @@ extension StoriesDataProvider: UICollectionViewDelegate {
         let detailView = DetailStoryViewController()
         detailView.modalPresentationStyle = .fullScreen
     }
+    
 }
 
 extension StoriesDataProvider: UICollectionViewDataSource {
@@ -39,7 +40,8 @@ extension StoriesDataProvider: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: StoriesViewCell.reusedID,
-            for: indexPath) as? StoriesViewCell else { return UICollectionViewCell() }
+            for: indexPath
+        ) as? StoriesViewCell else { return UICollectionViewCell() }
         
         let cellViewModel = storiesViewModel.storieCellViewModell(for: indexPath)
         cell.viewModel = cellViewModel

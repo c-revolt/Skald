@@ -41,6 +41,12 @@ class StoriesViewController: UIViewController {
         setupCollectionView()
     }
     
+    
+    
+    override func viewDidLayoutSubviews() {
+        collectionView?.frame = view.bounds
+    }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let animation = AnimationType.from(direction: .top, offset: 300)
@@ -49,10 +55,6 @@ class StoriesViewController: UIViewController {
                        animations: [animation],
                        delay: 0,
                        duration: 2)
-    }
-    
-    override func viewDidLayoutSubviews() {
-        collectionView?.frame = view.bounds
     }
     
     private func setupCollectionView() {
@@ -82,7 +84,7 @@ class StoriesViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        title = K.TabBarTitles.stories
+        title = K.navigationMainTitle
         let settingsImage = UIImage(systemName: "slider.vertical.3")
         let settingsBarButtonItem = UIBarButtonItem(
             image: settingsImage,
@@ -100,9 +102,9 @@ class StoriesViewController: UIViewController {
         
         settingsBarButtonItem.tintColor = .white
         searchBarButtonIte.tintColor = .white
-        
+
         navigationItem.rightBarButtonItems = [settingsBarButtonItem, searchBarButtonIte]
-        //navigationController?.navigationBar.prefersLargeTitles = true
+
     }
     
     @objc private func tappedRightBarButton() {

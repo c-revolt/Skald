@@ -39,7 +39,7 @@ class StoriesViewCell: UICollectionViewCell {
     // titleLabel
     var titleLabel: UILabel = {
         let label = UILabel()
-        label.font = .boldSystemFont(ofSize: 18)
+        label.font = .avenir18()
         label.textAlignment = .center
         label.textColor = .white
         label.numberOfLines = 0
@@ -64,16 +64,6 @@ class StoriesViewCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    private func createGradient() {
-        let gradient = CAGradientLayer()
-        gradient.colors = [
-            UIColor.clear.cgColor,
-            UIColor.systemBackground.cgColor
-        ]
-        gradient.frame = bounds
-        layer.addSublayer(gradient)
     }
     
     private func viewHeirarchy() {
@@ -115,5 +105,15 @@ class StoriesViewCell: UICollectionViewCell {
             titleLabel.widthAnchor.constraint(equalToConstant: 200)
             
         ])
+    }
+    
+    private func createGradient() {
+        let gradient = CAGradientLayer()
+        gradient.colors = [
+            UIColor.clear.cgColor,
+            UIColor.systemBackground.cgColor
+        ]
+        gradient.frame = bounds
+        layer.addSublayer(gradient)
     }
 }

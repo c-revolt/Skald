@@ -36,6 +36,11 @@
 		D050FD79299B786F00324CEC /* SettingsIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD78299B786F00324CEC /* SettingsIO.swift */; };
 		D050FD7B299B787900324CEC /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD7A299B787900324CEC /* SettingsViewModel.swift */; };
 		D050FD7D299B788700324CEC /* SettingsDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D050FD7C299B788700324CEC /* SettingsDataProvider.swift */; };
+		D08BA022299BCB4500377938 /* UIFont+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BA021299BCB4500377938 /* UIFont+Extention.swift */; };
+		D08BA024299BD35100377938 /* DetailStoryImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BA023299BD35100377938 /* DetailStoryImageCell.swift */; };
+		D08BA027299BD3DD00377938 /* DetailStoryOverviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BA026299BD3DD00377938 /* DetailStoryOverviewCell.swift */; };
+		D08BA029299BD46900377938 /* DetailStoryHeaderCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BA028299BD46900377938 /* DetailStoryHeaderCellViewModel.swift */; };
+		D08BA02B299BD51600377938 /* DetailStoryOverviewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D08BA02A299BD51600377938 /* DetailStoryOverviewCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,9 +94,14 @@
 		D050FD78299B786F00324CEC /* SettingsIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsIO.swift; sourceTree = "<group>"; };
 		D050FD7A299B787900324CEC /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		D050FD7C299B788700324CEC /* SettingsDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDataProvider.swift; sourceTree = "<group>"; };
-		D08BA013299B9C7400377938 /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Skald.app; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/Skald.app"; sourceTree = "<absolute>"; };
-		D08BA014299B9C7400377938 /* SkaldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkaldTests.xctest; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/SkaldTests.xctest"; sourceTree = "<absolute>"; };
-		D08BA015299B9C7400377938 /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = SkaldUITests.xctest; path = "/Users/a.pride/Documents/Development/Skald/build/Debug-iphoneos/SkaldUITests.xctest"; sourceTree = "<absolute>"; };
+		D08BA01D299B9EE400377938 /* Skald.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skald.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08BA01E299B9EE400377938 /* SkaldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08BA01F299B9EE400377938 /* SkaldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkaldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D08BA021299BCB4500377938 /* UIFont+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extention.swift"; sourceTree = "<group>"; };
+		D08BA023299BD35100377938 /* DetailStoryImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryImageCell.swift; sourceTree = "<group>"; };
+		D08BA026299BD3DD00377938 /* DetailStoryOverviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryOverviewCell.swift; sourceTree = "<group>"; };
+		D08BA028299BD46900377938 /* DetailStoryHeaderCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryHeaderCellViewModel.swift; sourceTree = "<group>"; };
+		D08BA02A299BD51600377938 /* DetailStoryOverviewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailStoryOverviewCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +136,6 @@
 				729A32704A2BA7CA00514A82 /* Pods-Skald.debug.xcconfig */,
 				6922D043A4BEA1E1BAFE846C /* Pods-Skald.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +155,7 @@
 				D0009429299516AD009E1857 /* DetailStoryViewController.swift */,
 				D000942B299516BC009E1857 /* DetailStoryViewModel.swift */,
 				D000942D299516CF009E1857 /* DetailStoryDataProvider.swift */,
+				D08BA025299BD35800377938 /* Cells */,
 			);
 			path = DetailStoryModule;
 			sourceTree = "<group>";
@@ -158,6 +168,7 @@
 				D046902629530177002A536D /* Assets.xcassets */,
 				D046902829530177002A536D /* LaunchScreen.storyboard */,
 				D046902B29530177002A536D /* Info.plist */,
+				D08BA020299BCAF900377938 /* Extentions */,
 				D04690612955C4C5002A536D /* Utils */,
 				D04690622955C4D7002A536D /* JSONFiles */,
 			);
@@ -180,6 +191,9 @@
 				D046903D29530178002A536D /* SkaldUITests */,
 				C1020BC8B370B1EFF02895A1 /* Pods */,
 				D3AFE5F5FEB927C6C5CD631F /* Frameworks */,
+				D08BA01D299B9EE400377938 /* Skald.app */,
+				D08BA01E299B9EE400377938 /* SkaldTests.xctest */,
+				D08BA01F299B9EE400377938 /* SkaldUITests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,12 +270,31 @@
 		D050FD75299B77F000324CEC /* SettingsModule */ = {
 			isa = PBXGroup;
 			children = (
-				D050FD76299B786300324CEC /* SettingsViewController.swift */,
 				D050FD78299B786F00324CEC /* SettingsIO.swift */,
 				D050FD7A299B787900324CEC /* SettingsViewModel.swift */,
 				D050FD7C299B788700324CEC /* SettingsDataProvider.swift */,
+				D050FD76299B786300324CEC /* SettingsViewController.swift */,
 			);
 			path = SettingsModule;
+			sourceTree = "<group>";
+		};
+		D08BA020299BCAF900377938 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				D08BA021299BCB4500377938 /* UIFont+Extention.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		D08BA025299BD35800377938 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D08BA028299BD46900377938 /* DetailStoryHeaderCellViewModel.swift */,
+				D08BA02A299BD51600377938 /* DetailStoryOverviewCellViewModel.swift */,
+				D08BA023299BD35100377938 /* DetailStoryImageCell.swift */,
+				D08BA026299BD3DD00377938 /* DetailStoryOverviewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		D3AFE5F5FEB927C6C5CD631F /* Frameworks */ = {
@@ -291,7 +324,7 @@
 			);
 			name = Skald;
 			productName = Skald;
-			productReference = D08BA013299B9C7400377938 /* Skald.app */;
+			productReference = D08BA01D299B9EE400377938 /* Skald.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D046902F29530177002A536D /* SkaldTests */ = {
@@ -309,7 +342,7 @@
 			);
 			name = SkaldTests;
 			productName = SkaldTests;
-			productReference = D08BA014299B9C7400377938 /* SkaldTests.xctest */;
+			productReference = D08BA01E299B9EE400377938 /* SkaldTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		D046903929530178002A536D /* SkaldUITests */ = {
@@ -327,7 +360,7 @@
 			);
 			name = SkaldUITests;
 			productName = SkaldUITests;
-			productReference = D08BA015299B9C7400377938 /* SkaldUITests.xctest */;
+			productReference = D08BA01F299B9EE400377938 /* SkaldUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -449,12 +482,16 @@
 				D00094282995169E009E1857 /* DetailStoryIO.swift in Sources */,
 				D046905629530718002A536D /* StoriesViewModel.swift in Sources */,
 				D046905A29531500002A536D /* Assembly.swift in Sources */,
+				D08BA02B299BD51600377938 /* DetailStoryOverviewCellViewModel.swift in Sources */,
 				D046902229530172002A536D /* StoriesViewController.swift in Sources */,
+				D08BA022299BCB4500377938 /* UIFont+Extention.swift in Sources */,
+				D08BA027299BD3DD00377938 /* DetailStoryOverviewCell.swift in Sources */,
 				D0469050295304B1002A536D /* Story.swift in Sources */,
 				D050FD77299B786300324CEC /* SettingsViewController.swift in Sources */,
 				D046905C2955C1B2002A536D /* StoriesViewCell.swift in Sources */,
 				D046905E2955C24B002A536D /* Constants.swift in Sources */,
 				D000940A298E5F98009E1857 /* StoriesDataProvider.swift in Sources */,
+				D08BA029299BD46900377938 /* DetailStoryHeaderCellViewModel.swift in Sources */,
 				D000942C299516BC009E1857 /* DetailStoryViewModel.swift in Sources */,
 				D000942A299516AD009E1857 /* DetailStoryViewController.swift in Sources */,
 				D04690602955C368002A536D /* Bundle-Decodable.swift in Sources */,
@@ -464,6 +501,7 @@
 				D000942E299516CF009E1857 /* DetailStoryDataProvider.swift in Sources */,
 				D04690642955C504002A536D /* ResizableLayout.swift in Sources */,
 				D04690542953070A002A536D /* StoriesIO.swift in Sources */,
+				D08BA024299BD35100377938 /* DetailStoryImageCell.swift in Sources */,
 				D046901E29530172002A536D /* AppDelegate.swift in Sources */,
 				D046902029530172002A536D /* SceneDelegate.swift in Sources */,
 				D0469058295314A5002A536D /* Coordinator.swift in Sources */,
